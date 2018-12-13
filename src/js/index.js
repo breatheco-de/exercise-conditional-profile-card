@@ -35,7 +35,8 @@ function render(values = {}) {
    *  2) The conditional rendering logic starts here
    */
 
-  // here we ask the question, if includeCover==false then we reset the cover value to an empty string
+  // here we ask the logical questions to make decitions on how to build the heml
+  // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
 
