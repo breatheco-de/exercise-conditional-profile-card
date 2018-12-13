@@ -2,38 +2,51 @@
 
 As a web developer, you will be creatings lots and lots of dynamic HTML using Javascript based algorithms.
 
-In this exercise you have to create the HTML code needed to render a profile card based on a series of variables that could change in value over time. Here is an example of the profile card:
+In this exercise you have to create the HTML code needed to render a profile card based on a series of variables that could change in value during runtime. Here is an example of the profile card:
 
-![Conditional Profile Card](aasd)
+![Conditional Profile Card](https://raw.githubusercontent.com/breatheco-de/conditional-profile-card/master/preview.png)
 
-```
-  // if includeCover is true the algorithm should
-  includeCover: true,
-  // this is the url of the image that will used as background for the profile cover
-  background:
-    "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
-  // this is the url for the profile avatar
-  avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
-  // social media bar position (left or right)
-  socialMediaPosition: "left",
-  // social media usernames
-  twitter: null,
-  github: "alesanchezr",
-  linkedin: null,
-  instagram: null,
+## Initial Variable Values
 
-  name: null,
-  lastname: null,
-  role: null,
+| Name | Type | Default Value | Description |
+| --- | --- | --- | --- |
+| includeCover | boolean | true | it determins if the cover shoud be visible with an image or not |
+| background | string | null | the url of the image that will used as background for the profile cover |
+| avatarURL | string | null | the url for the profile avatar |
+| socialMediaPosition | string | "right" | it can be `left` or `right` and it determines where to place the social media bar |
+| twitter | string | null | the twitter username to be displayed on the profile |
+| github | string | null | the github username to be displayed on the profile |
+| linkedin | string | null | the linkedin username to be displayed on the profile |
+| instagram | string | null | the instagram username to be displayed on the profile |
+| name | string | null | The name of the user to be displayed on the profile |
+| lastname | string | null | The name of the user to be displayed on the profile |
+| role | string | null | The name of the user to be displayed on the profile |
+| country | string | null | The name of the user to be displayed on the profile |
+| city | string | null | the twitter username to be displayed on the profile |
 
-  country: null,
-  city: null
-```
+## Hard-Coded HTML
+
+This is an example of a possible HTML output, you will have to replace the name, lastname, etc. With the values that these variables may have.
+
+<div class="widget">
+  <div class="cover"><img src="https://the_url.com/for_the_background.png" /></div>
+  <img src="https://the_url.com/for_the_image.png" class="photo" />
+  <h1>Ryan Boylett</h1>
+  <h2>Web Developer</h2>
+  <h3>Miami, USA</h3>
+  <ul class="position-right">
+    <li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://github.com/alesanchezr"><i class="fa fa-github"></i></a></li>
+    <li><a href="https://linkedin.com/alesanchezr"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram"></i></a></li>
+  </ul>
+</div>
 
 ## Installation
 
 1. Clone the repository
 2. Install NPM packages: `npm install`
 3. Buid for the first time: `npm run build`
+4. Start updating the `render` function inside the `index.js` file, that is the only file you have to update.
 
 Note: every time you update any file you will have to build again in order to update the bundle.
