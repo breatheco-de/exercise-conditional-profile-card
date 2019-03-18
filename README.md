@@ -27,7 +27,7 @@ In this exercise you have to create the HTML code needed to render a profile car
 ## Hard-Coded HTML
 
 This is an example of a possible HTML output, you will have to replace the name, lastname, etc. With the values that these variables may have.
-
+```html
 <div class="widget">
   <div class="cover"><img src="https://the_url.com/for_the_background.png" /></div>
   <img src="https://the_url.com/for_the_image.png" class="photo" />
@@ -41,11 +41,11 @@ This is an example of a possible HTML output, you will have to replace the name,
     <li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram"></i></a></li>
   </ul>
 </div>
-
+```
 ## Installation
 
-1. Clone the repository
-2. Install NPM packages: `npm install`
+1. Clone this repository.
+2. Install the NPM packages: `npm install`
 3. Buid for the first time: `npm run build`
 4. Start updating the `render` function inside the `index.js` file, that is the only file and function you have to update.
 
