@@ -4,7 +4,7 @@ As a web developer, you will be creatings lots and lots of dynamic HTML using Ja
 
 In this exercise you have to create the HTML code needed to render a profile card based on a series of variables that could change in value during runtime. Here is an example of the profile card:
 
-![Conditional Profile Card](https://raw.githubusercontent.com/breatheco-de/exercise-conditional-profile-card/master/preview.png)
+![Conditional Profile Card](https://projects.breatheco.de/json?slug=postcard&preview)
 
 ## Initial Variable Values
 
