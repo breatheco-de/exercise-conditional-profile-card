@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/4GeeksAcademy/vanillajs-hello#readme",
   "dependencies": {
-    "bootstrap": "^4.1.2",
+    "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3",
     "breathecode-dom": "^1.0.0"
