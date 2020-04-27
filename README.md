@@ -4,7 +4,7 @@ As a web developer, you will be creatings lots and lots of dynamic HTML using Ja
 
 In this exercise you have to create the HTML code needed to render a profile card based on a series of variables that could change in value during runtime. Here is an example of the profile card:
 
-![Conditional Profile Card](https://raw.githubusercontent.com/breatheco-de/exercise-conditional-profile-card/master/preview.gif)
+![Conditional Profile Card](https://projects.breatheco.de/json?slug=conditional-profile-card&preview)
 
 ## Initial Variable Values
 
@@ -42,11 +42,26 @@ This is an example of a possible HTML output, you will have to replace the name,
   </ul>
 </div>
 ```
+
 ## Installation
 
-1. Clone this repository.
-2. Install the NPM packages: `npm install`
-3. Buid for the first time: `npm run build`
-4. Start updating the `render` function inside the `index.js` file, that is the only file and function you have to update.
+1. Clone this repository to download the initial boilerplate: 
 
-Note: every time you update any file you will have to build again in order to update the bundle.
+`git clone https://github.com/breatheco-de/exercise-conditional-profile-card`
+
+2. Get into the project folder: 
+
+`cd exercise-conditional-profile-card`
+
+3. Install NPM packages: `npm install`
+Note: if you're using c9 make sure you are running in the latest version of node: 
+
+4. Buid for the first time: `npm run build`
+Note: you will have to build every time you update index.js
+
+5. If you are using cloud 9, right click on the `public/index.html` file and click "run" to start the server and get your public website link.
+
+6. Start updating the `render` function inside the `index.js` file, that is the only file you have to do `npm run build` again and refresh your public website url.
+
+IMPORTANT: every time you update any file you will have to build again in order to update the bundle.
+
