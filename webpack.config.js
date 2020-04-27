@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 var PrettierPlugin = require("prettier-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -39,6 +40,12 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   devtool: "source-map",
+  devServer: {
+    contentBase:  './dist',
+    hot: true,
+    disableHostCheck: true,
+    historyApiFallback: true
+  },
   plugins: [
     new webpack.ProvidePlugin({
       $: 'jquery',
@@ -48,6 +55,10 @@ module.exports = {
       Util: "exports-loader?Util!bootstrap/js/dist/util",
       Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"
     }),
-    new PrettierPlugin()
+    new PrettierPlugin(),
+    new HtmlWebpackPlugin({
+        favicon: '4geeks.ico',
+        template: 'src/index.html'
+    }),
   ]
 };

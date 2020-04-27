@@ -86,10 +86,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/style/index.scss":
-/*!*************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/style/index.scss ***!
-  \*************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/dist/cjs.js!./src/style/index.scss":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/sass-loader/dist/cjs.js!./src/style/index.scss ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -701,7 +701,7 @@ __webpack_require__.r(__webpack_exports__);
  *  This function is called every time the user changes types or changes any input
  */
 function render(variables = {}) {
-  // here we ask the logical questions to make decitions on how to build the heml
+  // here we ask the logical questions to make decisions on how to build the html
   // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
@@ -710,21 +710,21 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://github.com/alesanchezr"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/alesanchezr"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram"></i></a></li>
+          <h1>${variables.name || 'Empty name'}</h1>
+          <h2>${variables.role || 'Empty Role'}</h2>
+          <h3>${variables.city || ''}, ${variables.country || ''}</h3>
+          <ul class="${variables.socialMediaPosition}">
+            ${variables.twitter && `<li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter"></i></a></li>`}
+            ${variables.github && `<li><a href="https://github.com/alesanchezr"><i class="fa fa-github"></i></a></li>`}
+            ${variables.linkedin && `<li><a href="https://linkedin.com/alesanchezr"><i class="fa fa-linkedin"></i></a></li>`}
+            ${variables.instagram && `<li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram"></i></a></li>`}
           </ul>
         </div>
     `;
 }
 
 /**
- * Ignore this lines below, here is where we do the logic for the dropdowns
+ * Don't change any of the lines below, here is where we do the logic for the dropdowns
  */
 window.onload = function () {
   window.variables = {
@@ -768,7 +768,7 @@ window.onload = function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/sass-loader/lib/loader.js!./index.scss */ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/style/index.scss");
+var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/sass-loader/dist/cjs.js!./index.scss */ "./node_modules/css-loader/index.js!./node_modules/sass-loader/dist/cjs.js!./src/style/index.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
