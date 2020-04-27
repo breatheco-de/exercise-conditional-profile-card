@@ -41,6 +41,8 @@ console.log(window.variables);
 
 ## 📝Instructions
 
+These instructions come with a video for better understanding: https://youtu.be/gaVm8eyCqlM
+
 1. Read and understand the render function and the value of the `variables` variable that it receives.
 2. Change the content of the render function to make it render the variables on the card.
 
