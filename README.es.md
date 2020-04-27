@@ -6,6 +6,47 @@ En este ejercicio, debes crear el código HTML necesario para representar una ta
 
 ![Conditional Profile Card](https://projects.breatheco.de/p/javascript/beginner/conditional-profile-card/preview.gif)
 
+1. Dentro `src/index.js` hay una function llamada `render` que recibe un objecto `variables`.
+2. Ese objeto `variables` contiene todos los valores asignados en el formulario de la aplciacion (redes sociales, nombre apellido, etc.).
+3. La funcion render tiene la logica necesaria para recibir los valores del object `variables` e incluirlos dentro del HTML de la pagina utilizando `innerHTML`.
+
+```js
+function render(variables = {}) {
+  document.querySelector("#widget_content").innerHTML = `<div>Website code</div>`;
+}
+```
+
+Puedes ver el contenido del objeto `variables` en cualquier momento imprimiento la variable variables en la consola.
+
+```js
+console.log(window.variables);
+/*
+{
+    includeCover: true, // if includeCover is true the algorithm should
+    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da", // this is the url of the image that will used as background for the profile cover
+    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg", // this is the url for the profile avatar
+    socialMediaPosition: "left", // social media bar position (left or right)
+    
+    twitter: null, // social media usernames
+    github: "alesanchezr",
+    linkedin: null,
+    instagram: null,
+
+    name: null,
+    lastname: null,
+    role: null,
+    country: null,
+    city: null
+}
+*/
+```
+
+## 📝Instrucciones
+
+1. Inicia el ejercicio siguiendo las instrucciones de instalación mas abajo.
+2. Lee el codigo dentro de `index.js` y entiendelo, revisa como la funcion `render` esta cogiendo los valores dentro de `variables` y incluyendolos dentro del innerHTML de la pagina.
+3. Cambia el cotenido de la funcion para que tome en cuenta todos los valores que llegan a traves de `variables`.
+
 ## Valores de variables iniciales
 
 | Nombre | Tipo | Valor por Defecto | Descripción |
