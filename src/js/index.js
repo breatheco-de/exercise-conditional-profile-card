@@ -33,18 +33,14 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>${variables.name || "Empty name"}</h1>
-          <h2>${variables.role || "Empty Role"}</h2>
-          <h3>${variables.city || ""}, ${variables.country || ""}</h3>
-          <ul class="${variables.socialMediaPosition}">
-            ${variables.twitter &&
-              `<li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter"></i></a></li>`}
-            ${variables.github &&
-              `<li><a href="https://github.com/alesanchezr"><i class="fa fa-github"></i></a></li>`}
-            ${variables.linkedin &&
-              `<li><a href="https://linkedin.com/alesanchezr"><i class="fa fa-linkedin"></i></a></li>`}
-            ${variables.instagram &&
-              `<li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram"></i></a></li>`}
+          <h1>Lucy Boilett</h1>
+          <h2>Web Developer</h2>
+          <h3>Miami, USA</h3>
+          <ul class="position-right">
+            <li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://github.com/alesanchezr"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/alesanchezr"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
