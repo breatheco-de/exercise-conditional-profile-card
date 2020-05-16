@@ -4,7 +4,7 @@ As a web developer, you will be creatings lots and lots of dynamic HTML using Ja
 
 In this exercise you have to create the HTML code needed to render a profile card based on a series of variables that could change in value during runtime. Here is an example of the profile card:
 
-![Conditional Profile Card](https://projects.breatheco.de/json?slug=conditional-profile-card&preview)
+![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/blob/master/preview.gif?raw=true)
 
 Inside the src/index.js file there is a `render` function that receives variables and contains the logic to create most of the website HTML code.
 
