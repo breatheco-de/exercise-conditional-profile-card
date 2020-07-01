@@ -99,30 +99,13 @@ Con valores reales.
 
 ## Instalación
 
-1. Clona este repositorio para descargar la plantilla inicial:
+1. Clona este repositorio para descargar la plantilla inicial: `git clone https://github.com/breatheco-de/exercise-conditional-profile-card`
 
-`git clone https://github.com/breatheco-de/exercise-conditional-profile-card`
+2. Entra en la carpeta del proyecto:  `cd exercise-conditional-profile-card`
 
-2. Entra en la carpeta del proyecto: 
+3. Instala los paquetes NPM (require node 10+): `npm install`
 
-`cd exercise-conditional-profile-card`
+4. Corre el proyecto utilizando:  `npm run start`
 
-3. Instala los paquetes NPM:
-Nota: si está utilizando c9, asegúrese de estar ejecutando la última versión de node: 
+5. Actualiza el metodo `render` con el codigo necesario para que el Profile Card sea dinamico.
 
-`nvm install 8`
-
-`nvm use 8`
-
-
-`npm install`
-
-4. Construir por primera vez: 
-
-`npm run build`
-
-5.Si estás usando la cloud 9, haga clic con el botón derecho en el archivo `public / index.html` y haga clic en "ejecutar" para iniciar el servidor y obtener el enlace de su sitio web público.
-
-6. Comience a actualizar la función `render` dentro del archivo `index.js`, ese es el único archivo que tiene que hacer de nuevo `npm run build` y actualice la url de su sitio web público.
-
-Nota: cada vez que actualice un archivo, tendrá que volver a compilarlo para actualizar el paquete.
