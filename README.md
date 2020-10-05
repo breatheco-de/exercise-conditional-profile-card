@@ -98,6 +98,6 @@ This is an example of a possible HTML output, you will have to replace the name,
 3. Install NPM packages: `npm install`
 Note: if you're using c9 make sure you are running in the latest version of node: 
 
-4. Buid for the first time: `npm run start`
+4. Build for the first time: `npm run start`
 
 5. Start updating the `render` function inside the `index.js` file.
