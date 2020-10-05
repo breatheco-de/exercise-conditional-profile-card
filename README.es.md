@@ -2,13 +2,13 @@
 
 Como desarrollador web, estarás creando muchos HTML dinámicos + CSS usando algoritmos de Javascript.
 
-En este ejercicio, debes crear el código HTML necesario para representar una tarjeta de perfil. El código final cambiará en tiempo de ejecución en función de una serie de variables que podrían cambiar. Aquí hay un ejemplo de la tarjeta de perfil:
+En este ejercicio, debes crear el código HTML necesario para renderizar una tarjeta de perfil en función de una serie de vaiables que podrían cambiar durante el tiempo de ejecución. Aquí hay un ejemplo de la tarjeta de perfil:
 
 ![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/raw/master/preview.gif?raw=true)
 
-1. Dentro `src/index.js` hay una function llamada `render` que recibe un objecto `variables`.
-2. Ese objeto `variables` contiene todos los valores asignados en el formulario de la aplciacion (redes sociales, nombre apellido, etc.).
-3. La funcion render tiene la logica necesaria para recibir los valores del object `variables` e incluirlos dentro del HTML de la pagina utilizando `innerHTML`.
+1. Dentro `src/index.js` hay una function llamada `render` que recibe un objeto `variables`.
+2. Ese objeto `variables` contiene todos los valores asignados en el formulario de la apliación (redes sociales, nombre apellido, etc.).
+3. La función render tiene la lógica necesaria para recibir los valores del objeto `variables` e incluirlos dentro del HTML de la pagina utilizando `innerHTML`.
 
 ```js
 function render(variables = {}) {
@@ -43,19 +43,21 @@ console.log(window.variables);
 
 ## 📝Instrucciones
 
-Revisa este video con las instrucciones para mejor entendimiento: https://youtu.be/gaVm8eyCqlM
+Revisa este video con las instrucciones para que entiendas mejor el ejercicio: https://youtu.be/gaVm8eyCqlM
 
-1. Inicia el ejercicio siguiendo las instrucciones de instalación mas abajo.
-2. Lee el codigo dentro de `index.js` y entiendelo, revisa como la funcion `render` esta cogiendo los valores dentro de `variables` y incluyendolos dentro del innerHTML de la pagina.
-3. Cambia el cotenido de la funcion para que tome en cuenta todos los valores que llegan a traves de `variables`.
+1. Instala el proyecto como se indica en la sección "Instalación" más abajo.
+
+2. Lee y comprende la función render y el valor de la variable `variables` que recibe.
+
+3. Cambia el cotenido de la función render para que renderice todos los valores que llegan a traves de `variables`en la tarjeta de perfil.
 
 ## Valores de variables iniciales
 
 | Nombre | Tipo | Valor por Defecto | Descripción |
 | --- | --- | --- | --- |
 | background | string | null | la url de la imagen que se utilizará como fondo para la portada del perfil |
-| includeCover | boolean | true | Determina si debe mostrarse la portada. |
-| avatarURL | string | null | la url para el perfil de la imagen del avatar |
+| includeCover | boolean | true | Determina si debe mostrarse la portada o no. |
+| avatarURL | string | null | la url para el avatar del perfil |
 | socialMediaPosition | string | "right" | puede ser `left` o` right` y determina dónde colocar la barra de redes sociales |
 | twitter | string | null | El nombre de usuario de Twitter que se mostrará en el perfil. |
 | github | string | null | El nombre de usuario de Github que se mostrará en el perfil. |
@@ -69,7 +71,7 @@ Revisa este video con las instrucciones para mejor entendimiento: https://youtu.
 
 ## Ejemplo de HTML codificado
 
-Este es un ejemplo de una posible **salida (output)** HTML, debe reemplazar: 
+Este es un ejemplo de un posible **resultado** HTML, debe reemplazar: 
   *name*,           //h1 
   *lastname*,       //h1
   *role*,           //h2
@@ -99,13 +101,13 @@ Con valores reales.
 
 ## Instalación
 
-1. Clona este repositorio para descargar la plantilla inicial: `git clone https://github.com/breatheco-de/exercise-conditional-profile-card`
+1. Clona este repositorio para descargar el boilerplate inicial: `git clone https://github.com/breatheco-de/exercise-conditional-profile-card`
 
 2. Entra en la carpeta del proyecto:  `cd exercise-conditional-profile-card`
 
-3. Instala los paquetes NPM (require node 10+): `npm install`
+3. Instala los paquetes NPM (asegúrate de usar la última versión de node): `npm install`
 
 4. Corre el proyecto utilizando:  `npm run start`
 
-5. Actualiza el metodo `render` con el codigo necesario para que el Profile Card sea dinamico.
+5. Actualiza la función `render` dentri del archivo index.js.
 
