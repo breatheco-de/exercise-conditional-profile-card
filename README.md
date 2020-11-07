@@ -52,7 +52,7 @@ These instructions come with a video for better understanding: https://youtu.be/
 
 | Name | Type | Default Value | Description |
 | --- | --- | --- | --- |
-| includeCover | boolean | true | it determins if the cover shoud be visible with an image or not |
+| includeCover | boolean | true | it determines if the cover shoud be visible with an image or not |
 | background | string | null | the url of the image that will used as background for the profile cover |
 | avatarURL | string | null | the url for the profile avatar |
 | socialMediaPosition | string | "right" | it can be `left` or `right` and it determines where to place the social media bar |
