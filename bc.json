@@ -1,0 +1,20 @@
+{
+	"title" : "Conditional Profile Card Generator",
+	"slug" : "conditional-profile-card",
+	"status": "published",
+    "difficulty": "beginner",
+    "translations": ["es", "us"],
+    "technologies": ["conditionals", "conditional-rendering"],
+    "preview": "https://github.com/breatheco-de/conditional-profile-card/blob/master/preview.gif?raw=true",
+    "syntax": "javascript",
+	"solution" : "https://github.com/breatheco-de/exercise-conditional-profile-card/tree/solution",
+	"duration" : 4,
+	"description" : "Practice conditions, render a profile card based on a series of variables that could change in value during runtime like: username, avatar, etc.",
+	"talents": [
+		{ "badge": "identator", "points": 6 },
+		{ "badge": "tag-master", "points": 3 },
+		{ "badge": "window-lover", "points": 3 },
+		{ "badge": "abc", "points": 5 },
+		{ "badge": "functional-developer", "points": 5 }
+	]
+}
