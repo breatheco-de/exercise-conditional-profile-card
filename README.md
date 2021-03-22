@@ -1,14 +1,5 @@
 # Conditional Profile Card
 
-## 🌱  How to start this project
-
-This project comes with the necessary files to start working, but you have two options to start:
-
-a) Use gitpod: open this link in your browser to clone it with gitpod: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
-
-b) You can clone this repository on your local computer:
-```sh
-$ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.git
 ```
 **Make sure that you have node.js installed in your computer and run the following command on your terminal to preview your website:**
 As a web developer, you will be creatings lots and lots of dynamic HTML using Javascript based algorithms.
@@ -94,11 +85,17 @@ This is an example of a possible HTML output, you will have to replace the name,
 </div>
 ```
 
-## Installation
+## 🌱  How to start this project
 
-1. Clone this repository to download the initial boilerplate: 
+1. This project comes with the necessary files to start working, but you have two options to start:
 
-`git clone https://github.com/breatheco-de/exercise-conditional-profile-card`
+a) Use gitpod: open this link in your browser to clone it with gitpod: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
+
+b) You can clone this repository on your local computer:
+
+```sh
+$ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.git
+````
 
 2. Get into the project folder: 
 
