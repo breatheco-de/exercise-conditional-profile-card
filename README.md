@@ -1,7 +1,16 @@
 # Conditional Profile Card
 
-To begin using this project (after reading the instructions) please clone this repository as a boilerplate.
+## 🌱  How to start this project
 
+This project comes with the necessary files to start working, but you have two options to start:
+
+a) Use gitpod: open this link in your browser to clone it with gitpod: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
+
+b) You can clone this repository on your local computer:
+```sh
+$ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.git
+```
+**Make sure that you have node.js installed in your computer and run the following command on your terminal to preview your website:**
 As a web developer, you will be creatings lots and lots of dynamic HTML using Javascript based algorithms.
 
 In this exercise you have to create the HTML code needed to render a profile card based on a series of variables that could change in value during runtime. Here is an example of the profile card:
