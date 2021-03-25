@@ -86,7 +86,7 @@ This is an example of a possible HTML output, you will have to replace the name,
 
 ## 🌱  How to start this project
 
-1. This project comes with the necessary files to start working, but you have two options to start:
+This project comes with the necessary files to start working, but you have two options to start:
 
 a) Use gitpod: open this link in your browser to clone it with gitpod: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
 
@@ -101,6 +101,7 @@ $ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.gi
 `cd exercise-conditional-profile-card`
 
 3. Install NPM packages: `npm install`
+
 Note: if you're using c9 make sure you are running in the latest version of node: 
 
 4. Build for the first time: `npm run start`
