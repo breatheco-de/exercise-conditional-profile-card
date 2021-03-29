@@ -38,7 +38,34 @@ console.log(window.variables);
     city: null
 }
 */
-```
+
+## 🌱  How to start this project
+
+This project comes with the necessary files to start working, but you have two options to start:
+
+a) Use gitpod: open this link in your browser to clone it with gitpod: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
+
+b) You can clone this repository on your local computer:
+
+```sh
+$ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.git
+````
+
+2. Get into the project folder: 
+
+`cd exercise-conditional-profile-card`
+
+3. Install NPM packages: `npm install`
+
+Note: if you're using c9 make sure you are running in the latest version of node: 
+
+4. Build for the first time: `npm run start`
+
+5. Start updating the `render` function inside the `index.js` file.
+
+💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
+
+````
 
 ## 📝Instructions
 
@@ -83,30 +110,4 @@ This is an example of a possible HTML output, you will have to replace the name,
   </ul>
 </div>
 ```
-
-## 🌱  How to start this project
-
-This project comes with the necessary files to start working, but you have two options to start:
-
-a) Use gitpod: open this link in your browser to clone it with gitpod: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
-
-b) You can clone this repository on your local computer:
-
-```sh
-$ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.git
-````
-
-2. Get into the project folder: 
-
-`cd exercise-conditional-profile-card`
-
-3. Install NPM packages: `npm install`
-
-Note: if you're using c9 make sure you are running in the latest version of node: 
-
-4. Build for the first time: `npm run start`
-
-5. Start updating the `render` function inside the `index.js` file.
-
-💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
 
