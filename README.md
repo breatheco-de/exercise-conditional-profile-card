@@ -38,6 +38,7 @@ console.log(window.variables);
     city: null
 }
 */
+````
 
 ## 🌱  How to start this project
 
