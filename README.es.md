@@ -41,15 +41,35 @@ console.log(window.variables);
 */
 ```
 
+## 🌱  Cómo iniciar este proyecto
+
+1. Este proyecto viene con los archivos necesarios para empezar a trabajar, pero tienes dos opciones para empezar:
+
+a) Abrir este link con Gitpod en tu navegador: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
+
+b) Clonar este repositorio localmente en tu computador:
+```sh
+$ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.git
+```
+2. Entra en la carpeta del proyecto:  `cd exercise-conditional-profile-card`
+
+3. Instala los paquetes NPM (asegúrate de usar la última versión de node): `npm install`
+
+4. Corre el proyecto utilizando:  `npm run start`
+
+5. Actualiza la función `render` dentro del archivo index.js.
+
+
+💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
+
+
 ## 📝Instrucciones
 
 Revisa este video con las instrucciones para que entiendas mejor el ejercicio: https://youtu.be/gaVm8eyCqlM
 
-1. Instala el proyecto como se indica en la sección "Instalación" más abajo.
+1. Lee y comprende la función render y el valor de la variable `variables` que recibe.
 
-2. Lee y comprende la función render y el valor de la variable `variables` que recibe.
-
-3. Cambia el cotenido de la función render para que renderice todos los valores que llegan a traves de `variables`en la tarjeta de perfil.
+2. Cambia el cotenido de la función render para que renderice todos los valores que llegan a traves de `variables`en la tarjeta de perfil.
 
 ## Valores de variables iniciales
 
@@ -99,9 +119,8 @@ Con valores reales.
 </div>
 ```
 
-## Instalación
 
-1. Clona este repositorio para descargar el boilerplate inicial: `git clone https://github.com/breatheco-de/exercise-conditional-profile-card`
+
 
 2. Entra en la carpeta del proyecto:  `cd exercise-conditional-profile-card`
 
@@ -109,5 +128,5 @@ Con valores reales.
 
 4. Corre el proyecto utilizando:  `npm run start`
 
-5. Actualiza la función `render` dentri del archivo index.js.
+5. Actualiza la función `render` dentro del archivo index.js.
 
