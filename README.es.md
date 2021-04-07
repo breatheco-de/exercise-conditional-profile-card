@@ -2,12 +2,12 @@
 
 Como desarrollador web, estarás creando muchos HTML dinámicos + CSS usando algoritmos de Javascript.
 
-En este ejercicio, debes crear el código HTML necesario para renderizar una tarjeta de perfil en función de una serie de vaiables que podrían cambiar durante el tiempo de ejecución. Aquí hay un ejemplo de la tarjeta de perfil:
+En este ejercicio, debes crear el código HTML necesario para rrepresentar una tarjeta de perfil . El código final cambiará en tiempo de ejecución En función de una serie de variables que podrían cambiar.
 
 ![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/raw/master/preview.gif?raw=true)
 
 1. Dentro `src/index.js` hay una function llamada `render` que recibe un objeto `variables`.
-2. Ese objeto `variables` contiene todos los valores asignados en el formulario de la aplicación (redes sociales, nombre apellido, etc.).
+2. Este objeto `variables` contiene todos los valores asignados en el formulario de la aplicación (redes sociales, nombre apellido, etc.).
 3. La función render tiene la lógica necesaria para recibir los valores del objeto `variables` e incluirlos dentro del HTML de la pagina utilizando `innerHTML`.
 
 ```js
@@ -43,7 +43,7 @@ console.log(window.variables);
 
 ## 🌱  Cómo iniciar este proyecto
 
-1. Este proyecto viene con los archivos necesarios para empezar a trabajar, pero tienes dos opciones para empezar:
+1. Este proyescto viene con los archivos necesarios para empezar a trabajar, pero tienes dos opciones para empezar:
 
 a) Abrir este link con Gitpod en tu navegador: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
 
@@ -58,7 +58,6 @@ $ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.gi
 4. Corre el proyecto utilizando:  `npm run start`
 
 5. Actualiza la función `render` dentro del archivo index.js.
-
 
 💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
 
