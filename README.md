@@ -1,7 +1,6 @@
 # Conditional Profile Card
 
-To begin using this project (after reading the instructions) please clone this repository as a boilerplate.
-
+**Make sure that you have node.js installed in your computer and run the following command on your terminal to preview your website:**
 As a web developer, you will be creatings lots and lots of dynamic HTML using Javascript based algorithms.
 
 In this exercise you have to create the HTML code needed to render a profile card based on a series of variables that could change in value during runtime. Here is an example of the profile card:
@@ -39,7 +38,35 @@ console.log(window.variables);
     city: null
 }
 */
-```
+````
+
+## 🌱  How to start this project
+
+This project comes with the necessary files to start working, but you have two options to start:
+
+a) Use gitpod: open this link in your browser to clone it with gitpod: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
+
+b) You can clone this repository on your local computer:
+
+```sh
+$ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.git
+````
+
+2. Get into the project folder: 
+
+`cd exercise-conditional-profile-card`
+
+3. Install NPM packages: `npm install`
+
+Note: if you're using c9 make sure you are running in the latest version of node: 
+
+4. Build for the first time: `npm run start`
+
+5. Start updating the `render` function inside the `index.js` file.
+
+💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
+
+````
 
 ## 📝Instructions
 
@@ -85,19 +112,3 @@ This is an example of a possible HTML output, you will have to replace the name,
 </div>
 ```
 
-## Installation
-
-1. Clone this repository to download the initial boilerplate: 
-
-`git clone https://github.com/breatheco-de/exercise-conditional-profile-card`
-
-2. Get into the project folder: 
-
-`cd exercise-conditional-profile-card`
-
-3. Install NPM packages: `npm install`
-Note: if you're using c9 make sure you are running in the latest version of node: 
-
-4. Buid for the first time: `npm run start`
-
-5. Start updating the `render` function inside the `index.js` file.
