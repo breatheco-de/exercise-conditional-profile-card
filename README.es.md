@@ -7,7 +7,7 @@ En este ejercicio, debes crear el código HTML necesario para renderizar una tar
 ![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/raw/master/preview.gif?raw=true)
 
 1. Dentro `src/index.js` hay una function llamada `render` que recibe un objeto `variables`.
-2. Ese objeto `variables` contiene todos los valores asignados en el formulario de la apliación (redes sociales, nombre apellido, etc.).
+2. Ese objeto `variables` contiene todos los valores asignados en el formulario de la aplicación (redes sociales, nombre apellido, etc.).
 3. La función render tiene la lógica necesaria para recibir los valores del objeto `variables` e incluirlos dentro del HTML de la pagina utilizando `innerHTML`.
 
 ```js
@@ -16,7 +16,7 @@ function render(variables = {}) {
 }
 ```
 
-Puedes ver el contenido del objeto `variables` en cualquier momento imprimiento la variable variables en la consola.
+Puedes ver el contenido del objeto `variables` en cualquier momento imprimiento la variable `variables` en la consola.
 
 ```js
 console.log(window.variables);
@@ -69,7 +69,7 @@ Revisa este video con las instrucciones para que entiendas mejor el ejercicio: h
 
 1. Lee y comprende la función render y el valor de la variable `variables` que recibe.
 
-2. Cambia el cotenido de la función render para que renderice todos los valores que llegan a traves de `variables`en la tarjeta de perfil.
+2. Cambia el cotenido de la función render para que renderice todos los valores que llegan a través de `variables`en la tarjeta de perfil.
 
 ## Valores de variables iniciales
 
@@ -119,14 +119,4 @@ Con valores reales.
 </div>
 ```
 
-
-
-
-2. Entra en la carpeta del proyecto:  `cd exercise-conditional-profile-card`
-
-3. Instala los paquetes NPM (asegúrate de usar la última versión de node): `npm install`
-
-4. Corre el proyecto utilizando:  `npm run start`
-
-5. Actualiza la función `render` dentro del archivo index.js.
 
