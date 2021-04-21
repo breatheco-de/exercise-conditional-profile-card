@@ -41,11 +41,32 @@ console.log(window.variables);
 */
 ```
 
+## 🌱  Cómo iniciar este proyecto
+
+1. Este proyecto viene con los archivos necesarios para empezar a trabajar, pero tienes dos opciones para empezar:
+
+a) Abrir este link con Gitpod en tu navegador: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card`
+b) Clonar este repositorio localmente en tu computador:
+```sh
+` $ git clone https://github.com/breatheco-de/exercise-conditional-profile-card`
+
+```
+2. Entra en la carpeta del proyecto:  `cd exercise-conditional-profile-card`
+
+3. Instala los paquetes NPM (require node 10+): `npm install`
+
+4. Corre el proyecto utilizando:  `npm run start`
+
+5. Actualiza el metodo `render` con el codigo necesario para que el Profile Card sea dinamico.
+
+
+💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
+
+
 ## 📝Instrucciones
 
-Revisa este video con las instrucciones para mejor entendimiento: https://youtu.be/gaVm8eyCqlM
+Revisa este video con las instrucciones para tener un mejor entendimiento: https://youtu.be/gaVm8eyCqlM
 
-1. Inicia el ejercicio siguiendo las instrucciones de instalación mas abajo.
 2. Lee el codigo dentro de `index.js` y entiendelo, revisa como la funcion `render` esta cogiendo los valores dentro de `variables` y incluyendolos dentro del innerHTML de la pagina.
 3. Cambia el cotenido de la funcion para que tome en cuenta todos los valores que llegan a traves de `variables`.
 
@@ -96,16 +117,4 @@ Con valores reales.
   </ul>
 </div>
 ```
-
-## Instalación
-
-1. Clona este repositorio para descargar la plantilla inicial: `git clone https://github.com/breatheco-de/exercise-conditional-profile-card`
-
-2. Entra en la carpeta del proyecto:  `cd exercise-conditional-profile-card`
-
-3. Instala los paquetes NPM (require node 10+): `npm install`
-
-4. Corre el proyecto utilizando:  `npm run start`
-
-5. Actualiza el metodo `render` con el codigo necesario para que el Profile Card sea dinamico.
 
