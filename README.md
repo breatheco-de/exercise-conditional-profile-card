@@ -66,7 +66,6 @@ Note: if you're using c9 make sure you are running in the latest version of node
 
 💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
 
-````
 
 ## 📝Instructions
 
