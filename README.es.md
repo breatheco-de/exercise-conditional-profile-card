@@ -62,13 +62,14 @@ $ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.gi
 💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
 
 
-## 📝Instrucciones
+## 📝Instrucciones:
 
 Revisa este video con las instrucciones para que entiendas mejor el ejercicio: https://youtu.be/gaVm8eyCqlM
 
 1. Lee y comprende la función render y el valor de la variable `variables` que recibe.
 
 2. Cambia el cotenido de la función render para que renderice todos los valores que llegan a través de `variables`en la tarjeta de perfil.
+
 
 ## Valores de variables iniciales
 
@@ -117,5 +118,3 @@ Con valores reales.
   </ul>
 </div>
 ```
-
-

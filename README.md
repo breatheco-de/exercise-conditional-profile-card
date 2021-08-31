@@ -66,7 +66,6 @@ Note: if you're using c9 make sure you are running in the latest version of node
 
 💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
 
-````
 
 ## 📝Instructions
 
@@ -79,7 +78,7 @@ These instructions come with a video for better understanding: https://youtu.be/
 
 | Name | Type | Default Value | Description |
 | --- | --- | --- | --- |
-| includeCover | boolean | true | it determins if the cover shoud be visible with an image or not |
+| includeCover | boolean | true | it determines if the cover shoud be visible with an image or not |
 | background | string | null | the url of the image that will used as background for the profile cover |
 | avatarURL | string | null | the url for the profile avatar |
 | socialMediaPosition | string | "right" | it can be `left` or `right` and it determines where to place the social media bar |
