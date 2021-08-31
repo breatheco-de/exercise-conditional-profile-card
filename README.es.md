@@ -45,10 +45,10 @@ console.log(window.variables);
 
 1. Este proyecto viene con los archivos necesarios para empezar a trabajar, pero tienes dos opciones para empezar:
 
-a) Abrir este link con Gitpod en tu navegador: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card`
+a) Abrir este link con Gitpod en tu navegador: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card
 b) Clonar este repositorio localmente en tu computador:
 ```sh
-` $ git clone https://github.com/breatheco-de/exercise-conditional-profile-card`
+` $ git clone https://github.com/breatheco-de/exercise-conditional-profile-card
 
 ```
 2. Entra en la carpeta del proyecto:  `cd exercise-conditional-profile-card`
