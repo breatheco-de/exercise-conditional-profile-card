@@ -2,13 +2,13 @@
 
 Como desarrollador web, estarás creando muchos HTML dinámicos + CSS usando algoritmos de Javascript.
 
-En este ejercicio, debes crear el código HTML necesario para representar una tarjeta de perfil. El código final cambiará en tiempo de ejecución en función de una serie de variables que podrían cambiar. Aquí hay un ejemplo de la tarjeta de perfil:
+En este ejercicio, debes crear el código HTML necesario para rrepresentar una tarjeta de perfil . El código final cambiará en tiempo de ejecución En función de una serie de variables que podrían cambiar.
 
 ![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/raw/master/preview.gif?raw=true)
 
-1. Dentro `src/index.js` hay una function llamada `render` que recibe un objecto `variables`.
-2. Ese objeto `variables` contiene todos los valores asignados en el formulario de la aplciacion (redes sociales, nombre apellido, etc.).
-3. La funcion render tiene la logica necesaria para recibir los valores del object `variables` e incluirlos dentro del HTML de la pagina utilizando `innerHTML`.
+1. Dentro `src/index.js` hay una function llamada `render` que recibe un objeto `variables`.
+2. Este objeto `variables` contiene todos los valores asignados en el formulario de la aplicación (redes sociales, nombre apellido, etc.).
+3. La función render tiene la lógica necesaria para recibir los valores del objeto `variables` e incluirlos dentro del HTML de la pagina utilizando `innerHTML`.
 
 ```js
 function render(variables = {}) {
@@ -16,7 +16,7 @@ function render(variables = {}) {
 }
 ```
 
-Puedes ver el contenido del objeto `variables` en cualquier momento imprimiento la variable variables en la consola.
+Puedes ver el contenido del objeto `variables` en cualquier momento imprimiento la variable `variables` en la consola.
 
 ```js
 console.log(window.variables);
@@ -43,40 +43,41 @@ console.log(window.variables);
 
 ## 🌱  Cómo iniciar este proyecto
 
-1. Este proyecto viene con los archivos necesarios para empezar a trabajar, pero tienes dos opciones para empezar:
+1. Este proyescto viene con los archivos necesarios para empezar a trabajar, pero tienes dos opciones para empezar:
 
-a) Abrir este link con Gitpod en tu navegador: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card
+a) Abrir este link con Gitpod en tu navegador: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
+
 b) Clonar este repositorio localmente en tu computador:
 ```sh
-` $ git clone https://github.com/breatheco-de/exercise-conditional-profile-card
-
+$ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.git
 ```
 2. Entra en la carpeta del proyecto:  `cd exercise-conditional-profile-card`
 
-3. Instala los paquetes NPM (require node 10+): `npm install`
+3. Instala los paquetes NPM (asegúrate de usar la última versión de node): `npm install`
 
 4. Corre el proyecto utilizando:  `npm run start`
 
-5. Actualiza el metodo `render` con el codigo necesario para que el Profile Card sea dinamico.
-
+5. Actualiza la función `render` dentro del archivo index.js.
 
 💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
 
 
-## 📝Instrucciones
+## 📝Instrucciones:
 
-Revisa este video con las instrucciones para tener un mejor entendimiento: https://youtu.be/gaVm8eyCqlM
+Revisa este video con las instrucciones para que entiendas mejor el ejercicio: https://youtu.be/gaVm8eyCqlM
 
-2. Lee el codigo dentro de `index.js` y entiendelo, revisa como la funcion `render` esta cogiendo los valores dentro de `variables` y incluyendolos dentro del innerHTML de la pagina.
-3. Cambia el cotenido de la funcion para que tome en cuenta todos los valores que llegan a traves de `variables`.
+1. Lee y comprende la función render y el valor de la variable `variables` que recibe.
+
+2. Cambia el cotenido de la función render para que renderice todos los valores que llegan a través de `variables`en la tarjeta de perfil.
+
 
 ## Valores de variables iniciales
 
 | Nombre | Tipo | Valor por Defecto | Descripción |
 | --- | --- | --- | --- |
 | background | string | null | la url de la imagen que se utilizará como fondo para la portada del perfil |
-| includeCover | boolean | true | Determina si debe mostrarse la portada. |
-| avatarURL | string | null | la url para el perfil de la imagen del avatar |
+| includeCover | boolean | true | Determina si debe mostrarse la portada o no. |
+| avatarURL | string | null | la url para el avatar del perfil |
 | socialMediaPosition | string | "right" | puede ser `left` o` right` y determina dónde colocar la barra de redes sociales |
 | twitter | string | null | El nombre de usuario de Twitter que se mostrará en el perfil. |
 | github | string | null | El nombre de usuario de Github que se mostrará en el perfil. |
@@ -90,7 +91,7 @@ Revisa este video con las instrucciones para tener un mejor entendimiento: https
 
 ## Ejemplo de HTML codificado
 
-Este es un ejemplo de una posible **salida (output)** HTML, debe reemplazar: 
+Este es un ejemplo de un posible **resultado** HTML, debe reemplazar: 
   *name*,           //h1 
   *lastname*,       //h1
   *role*,           //h2
@@ -117,4 +118,3 @@ Con valores reales.
   </ul>
 </div>
 ```
-

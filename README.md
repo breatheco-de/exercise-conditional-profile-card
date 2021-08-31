@@ -42,9 +42,9 @@ console.log(window.variables);
 
 ## 🌱  How to start this project
 
-This project comes with the necessary files to start working, but you have two options to start:
+1. This project comes with the necessary files to start working, but you have two options to start:
 
-a) Use gitpod: open this link in your browser to clone it with gitpod: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
+a) Open this link in to clone it with gitpod (recommended): https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
 
 b) You can clone this repository on your local computer:
 
