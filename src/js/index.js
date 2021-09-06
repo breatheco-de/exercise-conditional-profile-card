@@ -11,7 +11,7 @@ import "../style/index.scss";
         socialMediaPosition: "left", // social media bar position (left or right)
         
         twitter: null, // social media usernames
-        github: "alesanchezr",
+        github: null,
         linkedin: null,
         instagram: null,
 
