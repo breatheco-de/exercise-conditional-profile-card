@@ -6,3 +6,5 @@ ports:
 tasks:
   - init: echo 'init script' # runs during prebuild
     command: npm install
+image:
+  file: .gitpod.Dockerfile
