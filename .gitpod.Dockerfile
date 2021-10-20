@@ -10,4 +10,4 @@ USER gitpod
 #     sudo rm -rf /var/lib/apt/lists/*
 #
 # More information: https://www.gitpod.io/docs/config-docker/
-RUN bash -c ". .nvm/nvm.sh     && nvm install 10.0.0    && nvm use 10.0.0     && nvm alias default 10.0.0"
+RUN bash -c ". .nvm/nvm.sh     && nvm install 10.0.0    && nvm use 10.0.0 "
