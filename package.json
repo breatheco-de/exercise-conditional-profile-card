@@ -2,12 +2,10 @@
   "name": "vanillajs-hello",
   "version": "1.0.0",
   "description": "Professional Boilerplate for Vanilla.js Web Apps",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "c9": "echo The webpack development server cannot be used on this project && echo Please run: $ npm run build",
-    "dev-server": "echo The webpack development server cannot be used on this project,[0m Please run $ npm run build",
-    "build": "webpack --mode development",
-    "start": "webpack-dev-server --mode development --open --port 3000",
+    "start": "webpack-dev-server --mode development --port 3000",
+    "build": "webpack --mode development --verbose --colors --display-error-details",
     "deploy": "node deploy-to-github.js"
   },
   "repository": {
@@ -21,6 +19,11 @@
     "Boilerplate",
     "BreatheCode"
   ],
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
   "author": "Alejandro Sanchez",
   "license": "ISC",
   "bugs": {
@@ -28,37 +31,36 @@
   },
   "homepage": "https://github.com/4GeeksAcademy/vanillajs-hello#readme",
   "dependencies": {
-    "bootstrap": "^4.4.1",
-    "breathecode-dom": "^1.0.0",
-    "jquery": "^3.5.0",
-    "popper.js": "^1.16.1"
+    "@popperjs/core": "^2.10.1",
+    "bootstrap": "^5.1.1"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-flow": "^6.23.0",
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
     "bc-console": "0.0.2",
-    "css-loader": "^0.28.11",
+    "bc-webpack-error-reporting-plugin": "0.0.2",
+    "clean-stack": "^3.0.1",
+    "css-loader": "^3.5.1",
+    "error-overlay-webpack-plugin": "^0.2.0",
+    "escape-string-regexp": "^1.0.5",
     "eslint": "^4.19.1",
-    "eslint-loader": "^2.2.1",
-    "eslint-plugin-flowtype": "^3.13.0",
-    "file-loader": "^1.1.11",
-    "flow-bin": "^0.88.0",
-    "flow-webpack-plugin": "^1.2.0",
+    "eslint-loader": "^2.0.0",
+    "file-loader": "^6.0.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
     "gh-pages": "^1.2.0",
-    "html-webpack-plugin": "^4.2.0",
-    "node-sass": "^4.14.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
     "parse-github-url": "^1.0.2",
     "prettier": "^1.19.1",
-    "prettier-webpack-plugin": "^1.2.0",
+    "prettier-webpack-plugin": "^1.1.0",
     "remote-origin-url": "^1.0.0",
-    "sass-loader": "^7.3.1",
-    "style-loader": "^0.21.0",
-    "webpack": "^4.43.0",
+    "stack-utils": "^2.0.3",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   }
 }

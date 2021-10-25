@@ -1,8 +1,5 @@
 {
   "parser": "babel-eslint",
-  "plugins": [
-    "flowtype"
-  ],
   "env": {
     "browser": true,
   },
@@ -20,5 +17,5 @@
         "functions": "ignore",
     }],
   },
-  "extends": ["eslint:recommended", "plugin:flowtype/recommended"]
+  "extends": ["eslint:recommended"]
 }

@@ -28,7 +28,7 @@ Note: if you're using c9 make sure you are running in the latest version of node
 
 4. Build for the first time: `npm run start`
 
-5. Start updating the `render` function inside the `index.js` file.
+5. Start updating the `render` function inside the `app.js` file.
 
 💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
 
@@ -40,7 +40,7 @@ In this exercise you have to create the HTML code needed to render a profile car
 
 ![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/blob/master/preview.gif?raw=true)
 
-Inside the src/index.js file there is a `render` function that receives variables and contains the logic to create most of the website HTML code.
+Inside the src/app.js file there is a `render` function that receives variables and contains the logic to create most of the website HTML code.
 
 ```js
 function render(variables = {}) {

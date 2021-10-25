@@ -6,7 +6,7 @@ En este ejercicio, debes crear el código HTML necesario para rrepresentar una t
 
 ![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/raw/master/preview.gif?raw=true)
 
-1. Dentro `src/index.js` hay una function llamada `render` que recibe un objeto `variables`.
+1. Dentro `src/app.js` hay una function llamada `render` que recibe un objeto `variables`.
 2. Este objeto `variables` contiene todos los valores asignados en el formulario de la aplicación (redes sociales, nombre apellido, etc.).
 3. La función render tiene la lógica necesaria para recibir los valores del objeto `variables` e incluirlos dentro del HTML de la pagina utilizando `innerHTML`.
 
@@ -57,7 +57,7 @@ $ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.gi
 
 4. Corre el proyecto utilizando:  `npm run start`
 
-5. Actualiza la función `render` dentro del archivo index.js.
+5. Actualiza la función `render` dentro del archivo app.js.
 
 💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
 
