@@ -2,6 +2,7 @@
 ports:
   - port: 3000
     onOpen: open-browser
+    visibility: public
 
 tasks:
   - init: echo 'init script' # runs during prebuild
