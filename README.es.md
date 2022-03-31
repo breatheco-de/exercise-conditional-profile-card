@@ -2,11 +2,12 @@
 
 Como desarrollador web, estarás creando muchos HTML dinámicos + CSS usando algoritmos de Javascript.
 
-En este ejercicio, debes crear el código HTML necesario para representar una tarjeta de perfil . El código final cambiará en tiempo de ejecución En función de una serie de variables que podrían cambiar.
+
+En este ejercicio, debes crear el código HTML necesario para representar una tarjeta de perfil. El código final cambiará en tiempo de ejecución. En función de una serie de variables que podrían cambiar.
 
 ![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/raw/master/preview.gif?raw=true)
 
-1. Dentro `src/app.js` hay una function llamada `render` que recibe un objeto `variables`.
+1. Dentro `src/app.js` hay una función llamada `render` que recibe un objeto `variables`.
 2. Este objeto `variables` contiene todos los valores asignados en el formulario de la aplicación (redes sociales, nombre apellido, etc.).
 3. La función render tiene la lógica necesaria para recibir los valores del objeto `variables` e incluirlos dentro del HTML de la pagina utilizando `innerHTML`.
 
@@ -66,22 +67,22 @@ $ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.gi
 
 Revisa este video con las instrucciones para que entiendas mejor el ejercicio: https://youtu.be/gaVm8eyCqlM
 
-1. Lee y comprende la función render y el valor de la variable `variables` que recibe.
+1. Lee y comprende la función `render` y el valor de la variable `variables` que recibe.
 
-2. Cambia el cotenido de la función render para que renderice todos los valores que llegan a través de `variables`en la tarjeta de perfil.
+2. Cambia el contenido de la función `render` para que renderice todos los valores que llegan a través de `variables` en la tarjeta de perfil.
 
 
 ## Valores de variables iniciales
 
 | Nombre | Tipo | Valor por Defecto | Descripción |
 | --- | --- | --- | --- |
-| background | string | null | la url de la imagen que se utilizará como fondo para la portada del perfil |
+| background | string | null | La url de la imagen que se utilizará como fondo para la portada del perfil |
 | includeCover | boolean | true | Determina si debe mostrarse la portada o no. |
-| avatarURL | string | null | la url para el avatar del perfil |
+| avatarURL | string | null | La url para el avatar del perfil |
 | socialMediaPosition | string | "right" | puede ser `left` o` right` y determina dónde colocar la barra de redes sociales |
 | twitter | string | null | El nombre de usuario de Twitter que se mostrará en el perfil. |
 | github | string | null | El nombre de usuario de Github que se mostrará en el perfil. |
-| linkedin | string | null | El nombre de usuario de linkedin que se mostrará en el perfil. |
+| linkedin | string | null | El nombre de usuario de Linkedin que se mostrará en el perfil. |
 | instagram | string | null | El nombre de usuario de Instagram para ser mostrado en el perfil. |
 | name | string | null | El nombre del usuario que se mostrará en el perfil.|
 | lastname | string | null | El nombre del usuario que se mostrará en el perfil. |
@@ -91,7 +92,7 @@ Revisa este video con las instrucciones para que entiendas mejor el ejercicio: h
 
 ## Ejemplo de HTML codificado
 
-Este es un ejemplo de un posible **resultado** HTML, debe reemplazar: 
+Este es un ejemplo de un posible **resultado** HTML, debes reemplazar: 
   *name*,           //h1 
   *lastname*,       //h1
   *role*,           //h2
