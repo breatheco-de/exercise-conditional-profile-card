@@ -7,9 +7,9 @@ En este ejercicio, debes crear el código HTML necesario para representar una ta
 
 ![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/raw/master/preview.gif?raw=true)
 
-1. Dentro `src/app.js` hay una función llamada `render` que recibe un objeto `variables`.
-2. Este objeto `variables` contiene todos los valores asignados en el formulario de la aplicación (redes sociales, nombre apellido, etc.).
-3. La función render tiene la lógica necesaria para recibir los valores del objeto `variables` e incluirlos dentro del HTML de la pagina utilizando `innerHTML`.
+1. Dentro de `src/app.js` hay una función llamada `render` que recibe un objeto `variables`.
+2. Este objeto `variables` contiene todos los valores asignados en el formulario de la aplicación (redes sociales, nombre y apellido; etc.).
+3. La función `render tiene la lógica necesaria para recibir los valores del objeto `variables` e incluirlos dentro del HTML de la página utilizando `innerHTML`.
 
 ```js
 function render(variables = {}) {
@@ -46,7 +46,7 @@ console.log(window.variables);
 
 1. Este proyescto viene con los archivos necesarios para empezar a trabajar, pero tienes dos opciones para empezar:
 
-a) Abrir este link con Gitpod en tu navegador: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
+a) Abrir este enlace con Gitpod en tu navegador: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
 
 b) Clonar este repositorio localmente en tu computador:
 ```sh
@@ -58,7 +58,7 @@ $ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.gi
 
 4. Corre el proyecto utilizando:  `npm run start`
 
-5. Actualiza la función `render` dentro del archivo app.js.
+5. Actualiza la función `render` dentro del archivo `app.js`.
 
 💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
 
