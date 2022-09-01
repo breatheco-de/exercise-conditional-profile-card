@@ -8,7 +8,7 @@ En este ejercicio, debes crear el código HTML necesario para representar una ta
 ![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/raw/master/preview.gif?raw=true)
 
 1. Dentro `src/app.js` hay una función llamada `render` que recibe un objeto `variables`.
-2. Este objeto `variables` contiene todos los valores asignados en el formulario de la aplicación (redes sociales, nombre apellido, etc.).
+2. Este objeto `variables` contiene todos los valores asignados en el formulario de la aplicación (redes sociales, nombre, apellido, etc.).
 3. La función render tiene la lógica necesaria para recibir los valores del objeto `variables` e incluirlos dentro del HTML de la pagina utilizando `innerHTML`.
 
 ```js
