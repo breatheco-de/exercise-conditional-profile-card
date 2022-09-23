@@ -44,7 +44,7 @@ console.log(window.variables);
 
 ## 🌱  Cómo iniciar este proyecto
 
-1. Este proyescto viene con los archivos necesarios para empezar a trabajar, pero tienes dos opciones para empezar:
+1. Este proyecto viene con los archivos necesarios para empezar a trabajar, pero tienes dos opciones para empezar:
 
 a) Abrir este link con Gitpod en tu navegador: https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
 
