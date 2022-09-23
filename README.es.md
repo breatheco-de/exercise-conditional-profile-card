@@ -17,7 +17,7 @@ function render(variables = {}) {
 }
 ```
 
-Puedes ver el contenido del objeto `variables` en cualquier momento imprimiento la variable `variables` en la consola.
+Puedes ver el contenido del objeto `variables` en cualquier momento imprimiendo la variable `variables` en la consola.
 
 ```js
 console.log(window.variables);
