@@ -96,7 +96,7 @@ These instructions come with a video for better understanding: https://youtu.be/
 | lastname | string | null | The name of the user to be displayed on the profile |
 | role | string | null | The name of the user to be displayed on the profile |
 | country | string | null | The name of the user to be displayed on the profile |
-| city | string | null | the twitter username to be displayed on the profile |
+| city | string | null | the city of the user to be displayed on the profile |
 
 ## Hard-Coded HTML
 
