@@ -85,7 +85,7 @@ window.onload = function() {
           : this.value == "false"
           ? false
           : this.value;
-      render(Object.assign(window.variables, values)); // render again the card with new valus
+      render(Object.assign(window.variables, values)); // render again the card with new values
     });
   });
 };
