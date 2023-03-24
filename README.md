@@ -34,7 +34,7 @@ Note: if you're using c9 make sure you are running in the latest version of node
 
 ## Some context
 
-As a web developer, you will be creatings lots and lots of dynamic HTML using Javascript based algorithms.
+As a web developer, you will be creating lots and lots of dynamic HTML using Javascript based algorithms.
 
 In this exercise you have to create the HTML code needed to render a profile card based on a series of variables that could change in value during runtime. Here is an example of the profile card:
 
