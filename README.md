@@ -10,29 +10,19 @@ $ node -v
 
 ## 🌱  How to start this project
 
-1. This project comes with the necessary files to start working, but you have two options to start:
+This project comes with the necessary files to start working immediately.
 
-a) Click on this link to open it with Gitpod (recommended): https://gitpod.io#https://github.com/breatheco-de/exercise-conditional-profile-card.git
+We recommend opening this very same repository using a provisioning tool like [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recommended) or [Gitpod](https://4geeks.com/lesson/how-to-use-gitpod). Alternatively, you can clone it on your local computer using the `git clone` command.
 
-b) If you don't have Gitpod, you can clone this repository on your local computer:
+This is the repository you need to open:
 
-```sh
-$ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.git
+```
+https://github.com/breatheco-de/exercise-conditional-profile-card.git
 ```
 
-2. Get into the project folder: 
+**👉 Please follow these steps on** [how to start a coding project](https://4geeks.com/lesson/how-to-start-a-project).
 
-`cd exercise-conditional-profile-card`
-
-3. Install NPM packages: `npm install`
-
-Note: if you're using c9 make sure you are running in the latest version of node: 
-
-4. Build for the first time: `npm run start`
-
-5. Start updating the `render` function inside the `app.js` file.
-
-💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit`, and `push`.
+💡 Important: Remember to save and upload your code to GitHub by creating a new repository, updating the remote (`git remote set-url origin <your new url>`), and uploading the code to your new repository using the `add`, `commit` and `push` commands from the git terminal.
 
 ## Some context
 
@@ -73,7 +63,7 @@ console.log(window.variables);
     city: null
 }
 */
-````
+```
 
 ## 📝Instructions
 
@@ -119,3 +109,4 @@ This is an example of a possible HTML output, you will have to replace the name,
 </div>
 ```
 
+This and many other projects are built by students as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
