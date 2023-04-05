@@ -1,4 +1,6 @@
+<!--hide-->
 # Conditional Profile Card
+<!--endhide-->
 
 Note: Make sure that you have node.js installed in your computer by typing in your terminal:
 
@@ -24,9 +26,9 @@ https://github.com/breatheco-de/exercise-conditional-profile-card.git
 
 ## Some context
 
-As a web developer, you will be creatings lots and lots of dynamic HTML using Javascript based algorithms.
+As a web developer, you will be creating lots and lots of dynamic HTML using Javascript based algorithms.
 
-In this exercise you have to create the HTML code needed to render a profile card based on a series of variables that could change in value during runtime. Here is an example of the profile card:
+In this exercise, you have to create the HTML code needed to render a profile card based on a series of variables that could change in value during runtime. Here is an example of the profile card:
 
 ![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/blob/master/preview.gif?raw=true)
 
@@ -45,7 +47,7 @@ console.log(window.variables);
 /*
 {
     includeCover: true, // if includeCover is true the algorithm should
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da", // this is the url of the image that will used as background for the profile cover
+    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da", // this is the url of the image that will use as background for the profile cover
     avatarURL: "https://randomuser.me/api/portraits/women/42.jpg", // this is the url for the profile avatar
     socialMediaPosition: "left", // social media bar position (left or right)
     
@@ -75,7 +77,7 @@ These instructions come with a video for better understanding: https://youtu.be/
 | Name | Type | Default Value | Description |
 | --- | --- | --- | --- |
 | includeCover | boolean | true | it determines if the cover shoud be visible with an image or not |
-| background | string | null | the url of the image that will used as background for the profile cover |
+| background | string | null | the url of the image that will use as background for the profile cover |
 | avatarURL | string | null | the url for the profile avatar |
 | socialMediaPosition | string | "right" | it can be `left` or `right` and it determines where to place the social media bar |
 | twitter | string | null | the twitter username to be displayed on the profile |
@@ -90,7 +92,7 @@ These instructions come with a video for better understanding: https://youtu.be/
 
 ## Hard-Coded HTML
 
-This is an example of a possible HTML output, you will have to replace the name, lastname, etc. With the values that these variables may have.
+This is an example of a possible HTML output, you will have to replace the name, last-name, etc. With the values that these variables may have.
 ```html
 <div class="widget">
   <div class="cover"><img src="https://the_url.com/for_the_background.png" /></div>
