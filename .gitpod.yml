@@ -5,5 +5,5 @@ ports:
     visibility: public
 
 tasks:
-  - init: echo 'init script' # runs during prebuild
+  - before: nvm install 16
     command: npm install
