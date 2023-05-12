@@ -47,9 +47,11 @@ function render(variables = {}) {
             <li><a href="https://github.com/${
               variables.github
             }"><i class="fab fa-github"></i></a></li>
+            
             <li><a href="https://linkedin.com/${
               variables.linkedin
-            }<i class="fab fa-linkedin"></i></a></li>
+            }"><i class="fab fa-linkedin"></i></a></li>
+
             <li><a href="https://instagram.com/${
               variables.instagram
             }"><i class="fab fa-instagram"></i></a></li>
