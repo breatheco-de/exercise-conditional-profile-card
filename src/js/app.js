@@ -10,16 +10,16 @@ import "../style/index.css";
         avatarURL: "https://randomuser.me/api/portraits/women/42.jpg", // this is the url for the profile avatar
         socialMediaPosition: "left", // social media bar position (left or right)
         
-        twitter: null, // social media usernames
-        github: null,
-        linkedin: null,
-        instagram: null,
+        twitter: string, // social media usernames
+        github: string,
+        linkedin: string,
+        instagram: string,
 
-        name: null,
-        lastname: null,
-        role: null,
-        country: null,
-        city: null
+        name: string,
+        lastname: string,
+        role: string,
+        country: string,
+        city: string
     }
  */
 function render(variables = {}) {
@@ -33,14 +33,14 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+          <h1>${variables.name},${variables.lastname}</h1>
+          <h2 >${variables.role}</h2>
+          <h3>${variables.city},${variables.country}</h3>
+          <ul class="${variables.socialMediaPosition}" >
+            <li><a href="https://twitter.com/${variables.twitter}"><i class='bx bxl-twitter' ></i></a></li>
+            <li><a href="https://github.com/${variables.github}"><i class='bx bxl-github'></i></a></li>
+            <li><a href="https://linkedin.com/${variables.linkedin}"><i class='bx bxl-linkedin'></i></a></li>
+            <li><a href="https://instagram.com/${variables.instagram}"><i class='bx bxl-instagram'></i></a></li>
           </ul>
         </div>
     `;
@@ -56,7 +56,7 @@ window.onload = function() {
     // this is the url of the image that will used as background for the profile cover
     background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGjuo1Y2rzJM36R2TQKTN_cGDt2i1NhM81hg&usqp=CAU",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
