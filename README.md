@@ -72,6 +72,28 @@ These instructions come with a video for better understanding: https://youtu.be/
 1. Read and understand the render function and the value of the `variables` variable that it receives.
 2. Change the content of the render function to make it render the variables on the card.
 
+## 💡 Attention!
+You **do not** need to add any event listeners to the elements that are already built in the project. This is already being done by this part of the code:
+```javascript
+document.querySelectorAll(".picker").forEach(function(elm) {
+    elm.addEventListener("change", function(e) {
+      // <- add a listener to every input
+      const attribute = e.target.getAttribute("for"); // when any input changes, collect the value
+      let values = {};
+      values[attribute] =
+        this.value == "" || this.value == "null"
+          ? null
+          : this.value == "true"
+          ? true
+          : this.value == "false"
+          ? false
+          : this.value;
+      render(Object.assign(window.variables, values)); // render again the card with new valus
+    });
+  });
+```
+So when the elements contents "change" they will already update the variable values for each element. All you need to do is to update the HTML content inside `render` function, as mentioned on instruction 1.
+
 ## Initial Variable Values
 
 | Name | Type | Default Value | Description |
