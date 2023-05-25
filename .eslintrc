@@ -6,7 +6,7 @@
   "rules": {
     "strict":0,
     "no-unused-vars": 0,
-    "no-console": 1,
+    "no-console": 0,
     "semi": ["error", "always"],
     "allowImportExportEverywhere": false,
     "comma-dangle": [1, { //when to use the last comma
