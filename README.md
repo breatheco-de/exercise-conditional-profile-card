@@ -69,11 +69,14 @@ console.log(window.variables);
 
 These instructions come with a video for better understanding: https://youtu.be/gaVm8eyCqlM
 
-1. Read and understand the render function and the value of the `variables` variable that it receives.
-2. Change the content of the render function to make it render the variables on the card.
+1. Read and understand the `render` function and the value of the `variables` variable that it receives.
+
+2. Change the content of the `render` function to make it render the variables on the card.
 
 ## 💡 Attention!
+
 You **do not** need to add any event listeners to the elements that are already built in the project. This is already being done by this part of the code:
+
 ```javascript
 document.querySelectorAll(".picker").forEach(function(elm) {
     elm.addEventListener("change", function(e) {
@@ -92,6 +95,7 @@ document.querySelectorAll(".picker").forEach(function(elm) {
     });
   });
 ```
+
 So when the elements contents "change" they will already update the variable values for each element. All you need to do is to update the HTML content inside `render` function, as mentioned on instruction 1.
 
 ## Initial Variable Values
@@ -115,6 +119,7 @@ So when the elements contents "change" they will already update the variable val
 ## Hard-Coded HTML
 
 This is an example of a possible HTML output, you will have to replace the name, last-name, etc. With the values that these variables may have.
+
 ```html
 <div class="widget">
   <div class="cover"><img src="https://the_url.com/for_the_background.png" /></div>
