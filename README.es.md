@@ -2,15 +2,37 @@
 # Tarjeta de Perfil Condicional
 <!--endhide-->
 
+Nota: Asegúrate de que tienes node.js instalado en tu computadora escribiendo en tu terminal:
+
+```bash
+$ node -v
+```
+
+## 🌱 Cómo comenzar este proyecto
+
+Este proyecto viene con los archivos necesarios para comenzar a trabajar de inmediato.
+
+Recomendamos abrir este mismo repositorio usando una herramienta de aprovisionamiento como [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recomendado) o [Gitpod](https://4geeks.com/es/lesson/como-utilizar-gitpod). Alternativamente, puedes clonarlo en tu computadora local usando el comando `git clone`.
+
+Este es el repositorio que necesitas abrir:
+
+```
+https://github.com/breatheco-de/exercise-conditional-profile-card.git
+```
+
+**👉 Por favor sigue estos pasos en** [cómo comenzar un proyecto de codificación](https://4geeks.com/lesson/how-to-start-a-project).
+
+💡 Importante: Recuerda guardar y cargar tu código en GitHub creando un nuevo repositorio, actualizando el remoto (`git remote set-url origin <your new url>`) y cargando el código en su nuevo repositorio usando los comandos `add`, `commit` y `push` desde el terminal git.
+
+## Un poco de Contexto
+
 Como desarrollador web, estarás creando muchos HTML dinámicos + CSS usando algoritmos de Javascript.
 
-En este ejercicio, debes crear el código HTML necesario para representar una tarjeta de perfil. El código final cambiará en tiempo de ejecución. En función de una serie de variables que podrían cambiar.
+En este ejercicio, debes crear el código HTML necesario para representar una tarjeta de perfil. El código final cambiará en el tiempo de ejecución. En función de una serie de variables que podrían cambiar.
 
-![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/raw/master/preview.gif?raw=true)
+![Tarjeta de perfil condicional](https://github.com/breatheco-de/exercise-conditional-profile-card/raw/master/preview.gif?raw=true)
 
-1. Dentro de `src/app.js` hay una función llamada `render` que recibe un objeto `variables`.
-2. Este objeto `variables` contiene todos los valores asignados en el formulario de la aplicación (redes sociales, nombre y apellido; etc.).
-3. La función `render tiene la lógica necesaria para recibir los valores del objeto `variables` e incluirlos dentro del HTML de la página utilizando `innerHTML`.
+Dentro de `src/app.js` hay una función llamada `render` que recibe un objeto `variables` y contiene la lógica para crear la mayoría del código HTML de nuestro sitio web.
 
 ```js
 function render(variables = {}) {
@@ -18,7 +40,7 @@ function render(variables = {}) {
 }
 ```
 
-Puedes ver el contenido del objeto `variables` en cualquier momento imprimiendo la variable `variables` en la consola.
+Puedes ver las `variables` que están siendo generadas escribiendo en la consola:
 
 ```js
 console.log(window.variables);
@@ -43,22 +65,6 @@ console.log(window.variables);
 */
 ```
 
-## 🌱 Cómo comenzar este proyecto
-
-Este proyecto viene con los archivos necesarios para comenzar a trabajar de inmediato.
-
-Recomendamos abrir este mismo repositorio usando una herramienta de aprovisionamiento como [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recomendado) o [Gitpod](https://4geeks.com/es/lesson/como-utilizar-gitpod). Alternativamente, puedes clonarlo en tu computadora local usando el comando `git clone`.
-
-Este es el repositorio que necesitas abrir:
-
-```
-https://github.com/breatheco-de/exercise-conditional-profile-card.git
-```
-
-**👉 Por favor sigue estos pasos en** [cómo comenzar un proyecto de codificación](https://4geeks.com/lesson/how-to-start-a-project).
-
-💡 Importante: Recuerda guardar y cargar tu código en GitHub creando un nuevo repositorio, actualizando el remoto (`git remote set-url origin <your new url>`) y cargando el código en su nuevo repositorio usando los comandos `add`, `commit` y `push` desde el terminal git.
-
 ## 📝Instrucciones:
 
 Revisa este video con las instrucciones para que entiendas mejor el ejercicio: https://youtu.be/gaVm8eyCqlM
@@ -67,6 +73,30 @@ Revisa este video con las instrucciones para que entiendas mejor el ejercicio: h
 
 2. Cambia el contenido de la función `render` para que renderice todos los valores que llegan a través de `variables` en la tarjeta de perfil.
 
+## 💡 Atención!
+
+**No** necesitas añadir ningún evento listeners a los elementos que ya están construidos en el proyecto. Esto ya está siendo realizado por esta parte del código:
+
+```javascript
+document.querySelectorAll(".picker").forEach(function(elm) {
+    elm.addEventListener("change", function(e) {
+      // <- add a listener to every input
+      const attribute = e.target.getAttribute("for"); // when any input changes, collect the value
+      let values = {};
+      values[attribute] =
+        this.value == "" || this.value == "null"
+          ? null
+          : this.value == "true"
+          ? true
+          : this.value == "false"
+          ? false
+          : this.value;
+      render(Object.assign(window.variables, values)); // render again the card with new valus
+    });
+  });
+```
+
+Entonces cuando el contenido de los elementos "cambia" se va a actualizar de una vez la variable para cada elemento. Todo lo que necesitas hacer actualizar el contenido HTML dentro de la función `render`, como se mencionó en la instrucción 1.
 
 ## Valores de variables iniciales
 
@@ -86,19 +116,9 @@ Revisa este video con las instrucciones para que entiendas mejor el ejercicio: h
 | country | string | null | El país de residencia del usuario que se mostrará en el perfil. |
 | city | string | null | La ciudad de residencia del usuario que se mostrará en el perfil.|
 
-## Ejemplo de HTML codificado
+## HTML programado manualmente
 
-Este es un ejemplo de un posible **resultado** HTML, debes reemplazar: 
-  *name*,           //h1 
-  *lastname*,       //h1
-  *role*,           //h2
-  *city*,           //h3
-  *country*,        //h3
-  *social networks*,//ul
-  *photo*,          //img
-  *background*,     //div->img
-
-Con valores reales.
+Este es un ejemplo de una posible salida HTML, vas a tener que remplazar el nombre, apellido, etc. Con los valores que puedan tener estas variables.
 
 ```html
 <div class="widget">
