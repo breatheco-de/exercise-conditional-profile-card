@@ -106,10 +106,10 @@ So when the elements contents "change" they will already update the variable val
 | github | string | null | the github username to be displayed on the profile |
 | linkedin | string | null | the linkedin username to be displayed on the profile |
 | instagram | string | null | the instagram username to be displayed on the profile |
-| name | string | null | The name of the user to be displayed on the profile |
-| lastname | string | null | The name of the user to be displayed on the profile |
-| role | string | null | The name of the user to be displayed on the profile |
-| country | string | null | The name of the user to be displayed on the profile |
+| name | string | null | The first name of the user to be displayed on the profile |
+| lastname | string | null | The last name of the user to be displayed on the profile |
+| role | string | null | The role of the user to be displayed on the profile |
+| country | string | null | The country of the user to be displayed on the profile |
 | city | string | null | the city of the user to be displayed on the profile |
 
 ## Hard-Coded HTML
