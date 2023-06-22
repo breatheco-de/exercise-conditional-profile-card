@@ -111,9 +111,9 @@ So when the elements contents "change" they will already update the variable val
 | linkedin | string | null | the linkedin username to be displayed on the profile |
 | instagram | string | null | the instagram username to be displayed on the profile |
 | name | string | null | The name of the user to be displayed on the profile |
-| lastname | string | null | The name of the user to be displayed on the profile |
-| role | string | null | The name of the user to be displayed on the profile |
-| country | string | null | The name of the user to be displayed on the profile |
+| lastname | string | null | The lastname of the user to be displayed on the profile |
+| role | string | null | The role of the user to be displayed on the profile |
+| country | string | null | The country of the user to be displayed on the profile |
 | city | string | null | the city of the user to be displayed on the profile |
 
 ## Hard-Coded HTML
