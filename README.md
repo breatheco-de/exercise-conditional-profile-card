@@ -103,18 +103,18 @@ So when the elements contents "change" they will already update the variable val
 | Name | Type | Default Value | Description |
 | --- | --- | --- | --- |
 | includeCover | boolean | true | it determines if the cover shoud be visible with an image or not |
-| background | string | null | the url of the image that will use as background for the profile cover |
-| avatarURL | string | null | the url for the profile avatar |
+| background | string | null | The url of the image that will use as background for the profile cover |
+| avatarURL | string | null | The url for the profile avatar |
 | socialMediaPosition | string | "right" | it can be `left` or `right` and it determines where to place the social media bar |
-| twitter | string | null | the twitter username to be displayed on the profile |
-| github | string | null | the github username to be displayed on the profile |
-| linkedin | string | null | the linkedin username to be displayed on the profile |
-| instagram | string | null | the instagram username to be displayed on the profile |
+| twitter | string | null | The twitter username to be displayed on the profile |
+| github | string | null | The github username to be displayed on the profile |
+| linkedin | string | null | The linkedin username to be displayed on the profile |
+| instagram | string | null | The instagram username to be displayed on the profile |
 | name | string | null | The name of the user to be displayed on the profile |
 | lastname | string | null | The name of the user to be displayed on the profile |
 | role | string | null | The name of the user to be displayed on the profile |
 | country | string | null | The name of the user to be displayed on the profile |
-| city | string | null | the city of the user to be displayed on the profile |
+| city | string | null | The city of the user to be displayed on the profile |
 
 ## Hard-Coded HTML
 
