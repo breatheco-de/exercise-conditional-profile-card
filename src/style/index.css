@@ -20,7 +20,7 @@
 }
 .widget {
   position: relative;
-  width: 300px;
+  width: 320px;
   height: 350px;
   margin: 50px auto;
   background: #fff;
@@ -60,7 +60,7 @@
 }
 .widget h1 {
   margin: 60px 0 20px;
-  font-size: 26px;
+  font-size: 32px;
   color: #000;
 }
 .widget h3 {
