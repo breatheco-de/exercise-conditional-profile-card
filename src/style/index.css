@@ -20,8 +20,8 @@
 }
 .widget {
   position: relative;
-  width: 300px;
-  height: 350px;
+  width: 500px;
+  height: 550px;
   margin: 50px auto;
   background: #fff;
   border-radius: 5px;
@@ -99,4 +99,8 @@
 .widget ul li:last-child > a {
   border: none;
   border-radius: 0 0 3px 0;
+}
+.filters li label {
+  text-align: left;
+  margin-bottom: 0;
 }

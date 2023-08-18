@@ -85,3 +85,16 @@ window.onload = function() {
     });
   });
 };
+const coverImageInput = document.getElementById("coverImageInput");
+coverImageInput.addEventListener("change", function(e) {
+  const file = e.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function(event) {
+      // Set the background image of the cover div
+      window.variables.background = event.target.result;
+      render(window.variables);
+    };
+    reader.readAsDataURL(file);
+  }
+});
