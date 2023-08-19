@@ -1,9 +1,8 @@
 .filters {
-  background: white;
+  background: red;
   width: 100%;
 }
 .filters li {
-  display: inline-block;
   max-width: 80px;
   padding: 3px;
 }
@@ -19,8 +18,10 @@
   width: 100%;
 }
 .widget {
+  display: flex;
+  float: left;
   position: relative;
-  width: 500px;
+  width: 450px;
   height: 550px;
   margin: 50px auto;
   background: #fff;
@@ -80,6 +81,8 @@
 }
 .widget ul li {
   list-style: none;
+  padding: 5px;
+  margin: 5px;
 }
 .widget ul li a {
   display: block;
@@ -103,4 +106,19 @@
 .filters li label {
   text-align: left;
   margin-bottom: 0;
+}
+.picker {
+  font-size: 16px;
+  width: 400px;
+}
+li {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  min-width: 180px;
+}
+label {
+  margin-right: 20px;
 }

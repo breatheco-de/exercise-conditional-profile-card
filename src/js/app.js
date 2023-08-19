@@ -44,7 +44,7 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
     ${cover}
     <img src="${variables.avatarURL}" class="photo" />
-    <h1>${variables.name} ${variables.lastname}</h1>
+    <h1 class= fw-bolder fs-4>${variables.name} ${variables.lastname}</h1>
     <h2>${variables.role}</h2>
     <h3>${variables.city}, ${variables.country}</h3>
     ${socialMediaIcons}
@@ -75,7 +75,7 @@ window.onload = function() {
       let values = {};
       values[attribute] =
         this.value == "" || this.value == "null"
-          ? null
+          ? ""
           : this.value == "true"
           ? true
           : this.value == "false"
