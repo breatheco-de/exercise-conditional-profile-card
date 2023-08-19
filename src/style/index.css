@@ -118,8 +118,7 @@ body {
 }
 .picker {
   font-size: 12px;
-  width: 400px;
-  display: block;
+  width: 200px;
   justify-content: center;
   align-self: center;
 }
@@ -133,7 +132,7 @@ li {
 label {
   font-size: 14px;
   font-weight: 600;
-  margin: 5px 20px 5px 60px;
+  margin: 5px 20px 5px 100px;
 }
 .card {
   margin-top: 5px;
@@ -144,6 +143,7 @@ label {
   );
 }
 .form-control {
-  width: 400px;
+  width: 200px;
   align-self: center;
+  font-size: 12px;
 }
