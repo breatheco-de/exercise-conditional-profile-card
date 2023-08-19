@@ -54,8 +54,10 @@ function render(variables = {}) {
 window.onload = function() {
   window.variables = {
     includeCover: true,
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    background:
+      "https://www.impacthrg.com.au/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbk1HIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0725fc0328bc750a0fcc18a18ffde9bcca5b8dff/img-placeholder.jpg",
+    avatarURL:
+      "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
     socialMediaPosition: "position-left",
     twitter: "",
     github: "",

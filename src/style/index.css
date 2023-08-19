@@ -1,3 +1,6 @@
+body {
+  background-color: black;
+}
 .filters {
   background: red;
   width: 100%;
@@ -108,17 +111,29 @@
   margin-bottom: 0;
 }
 .picker {
-  font-size: 16px;
+  font-size: 12px;
   width: 400px;
+  display: flex;
+  justify-content: center;
 }
 li {
   margin: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: start;
   align-content: center;
 }
 label {
   margin-right: 20px;
   margin-left: 10px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.card {
+  background: radial-gradient(
+    110% 112.8% at 15.76% 0%,
+    #cec9f8 0%,
+    #d4f9e0 75.83%
+  );
 }
