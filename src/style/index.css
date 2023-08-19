@@ -121,6 +121,7 @@ body {
   width: 400px;
   display: block;
   justify-content: center;
+  align-self: center;
 }
 li {
   margin: 5px;
@@ -130,16 +131,19 @@ li {
   align-content: center;
 }
 label {
-  margin-right: 20px;
-  margin-left: 10px;
-  font-size: 12px;
-  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px 20px 5px 60px;
 }
 .card {
-  margin-top: 50px;
+  margin-top: 5px;
   background: radial-gradient(
     110% 112.8% at 15.76% 0%,
     #cec9f8 0%,
     #d4f9e0 75.83%
   );
+}
+.form-control {
+  width: 400px;
+  align-self: center;
 }
