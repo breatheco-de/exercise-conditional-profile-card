@@ -98,13 +98,7 @@ body {
   border-bottom: 1px solid #2cd5ca;
   transition: background-color 0.3s;
 }
-.widget ul li:hover > a {
-  background: radial-gradient(
-    110% 112.8% at 15.76% 0%,
-    #cec9f8 0%,
-    #d4f9e0 75.83%
-  );
-}
+
 .widget ul li:first-child > a {
   border-radius: 0 3px 0 0;
 }
@@ -132,7 +126,7 @@ li {
 label {
   font-size: 14px;
   font-weight: 600;
-  margin: 5px 20px 5px 100px;
+  margin: 5px 20px 5px 80px;
 }
 .card {
   margin-top: 5px;
