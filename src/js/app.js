@@ -44,9 +44,9 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
     ${cover}
     <img src="${variables.avatarURL}" class="photo" />
-    <h1 class= fw-bolder fs-4>${variables.name} ${variables.lastname}</h1>
-    <h2>${variables.role}</h2>
-    <h3>${variables.city}, ${variables.country}</h3>
+    <h1 class="fw-bolder fs-4">${variables.name} ${variables.lastname}</h1>
+    <h2 class="fs-2">${variables.role}</h2>
+    <h3>${variables.city} ${variables.country}</h3>
     ${socialMediaIcons}
   </div>`;
 }
