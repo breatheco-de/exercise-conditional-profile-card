@@ -21,8 +21,7 @@ body {
   width: 100%;
 }
 .widget {
-  display: block;
-  float: left;
+  display: flex;
   position: relative;
   width: 450px;
   height: 550px;
