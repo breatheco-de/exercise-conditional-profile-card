@@ -2,7 +2,7 @@ body {
   background-color: black;
 }
 .filters {
-  background: red;
+  background: black;
   width: 100%;
 }
 .filters li {
@@ -25,10 +25,10 @@ body {
   position: relative;
   width: 450px;
   height: 550px;
-  margin: 50px auto;
+  margin: 100px auto;
   background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border-color: #2cd5ca;
 }
 .widget .cover {
   height: 160px;
@@ -38,7 +38,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 160px;
-  border-radius: 4px 4px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 .widget .photo {
   position: absolute;
@@ -73,7 +73,11 @@ body {
   position: absolute;
   top: 20px;
   padding: 0;
-  background: #2cdfd3;
+  background: radial-gradient(
+    110% 112.8% at 15.76% 0%,
+    #cec9f8 0%,
+    #d4f9e0 75.83%
+  );
 }
 .widget ul.position-left {
   left: -26px;
@@ -89,14 +93,18 @@ body {
 .widget ul li a {
   display: block;
   padding: 5px 6px;
-  color: #fff;
+  color: #000000;
   cursor: pointer;
   text-align: center;
   border-bottom: 1px solid #2cd5ca;
   transition: background-color 0.3s;
 }
 .widget ul li:hover > a {
-  background-color: #2cd5ca;
+  background: radial-gradient(
+    110% 112.8% at 15.76% 0%,
+    #cec9f8 0%,
+    #d4f9e0 75.83%
+  );
 }
 .widget ul li:first-child > a {
   border-radius: 0 3px 0 0;
@@ -130,6 +138,7 @@ label {
   margin-top: 5px;
 }
 .card {
+  margin-top: 50px;
   background: radial-gradient(
     110% 112.8% at 15.76% 0%,
     #cec9f8 0%,
