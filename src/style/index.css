@@ -21,7 +21,6 @@ body {
   width: 100%;
 }
 .widget {
-  display: flex;
   position: relative;
   width: 450px;
   height: 550px;
@@ -120,14 +119,13 @@ body {
 .picker {
   font-size: 12px;
   width: 400px;
-  display: flex;
+  display: block;
   justify-content: center;
 }
 li {
   margin: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: start;
   align-content: center;
 }
