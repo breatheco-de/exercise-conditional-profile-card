@@ -1,8 +1,8 @@
 body {
-  background-color: black;
+  background-color: rgb(40, 40, 40);
 }
 .filters {
-  background: black;
+  background-color: rgb(40, 40, 40);
   width: 100%;
 }
 .filters li {
