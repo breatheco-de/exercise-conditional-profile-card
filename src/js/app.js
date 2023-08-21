@@ -29,19 +29,48 @@ function render(variables = {}) {
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
 
+  //Construct the social media icons exclusively when usernames are provided.
+  let socialMediaIcons = "";
+  if (
+    variables.twitter ||
+    variables.github ||
+    variables.linkedin ||
+    variables.instagram
+  ) {
+    socialMediaIcons = `<ul class="${variables.socialMediaPosition}">
+  ${
+    variables.twitter
+      ? `<li><a href="https://twitter.com/${variables.twitter}" target="_blank"><i class="fab fa-twitter"></i></a></li>`
+      : `<li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>`
+  }
+
+  ${
+    variables.github
+      ? `<li><a href="https://github.com/${variables.github}" target="_blank"><i  class="fab fa-github"></i></a></li>`
+      : `<li><a href="https://github.com" target="_blank"><i  class="fab fa-github"></i></a></li>`
+  }
+  ${
+    variables.linkedin
+      ? `<li><a href="https://linkedin.com/in/${variables.linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a></li>`
+      : `<li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>`
+  }
+  ${
+    variables.instagram
+      ? `<li><a href="https://instagram.com/${variables.instagram}" target="_blank"><i class="fab fa-instagram"></i></a></li>`
+      : `<li><a href="https://instagram.com"target="_blank"><i class="fab fa-instagram"></i></a></li>`
+  }
+  </ul>`;
+  }
+
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
-          </ul>
+          <h1>${variables.name} ${variables.lastname}</h1>
+          <h2>${variables.role}</h2>
+          <h3>${variables.city}, ${variables.country}</h3>
+          ${socialMediaIcons}
+          
         </div>
     `;
 }
@@ -61,7 +90,7 @@ window.onload = function() {
     socialMediaPosition: "position-left",
     // social media usernames
     twitter: null,
-    github: "alesanchezr",
+    github: null,
     linkedin: null,
     instagram: null,
     name: null,
