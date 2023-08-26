@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Conditional Profile Card</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
@@ -12,7 +12,6 @@
     />
     <link rel="shortcut icon" href="./assets/img/4geeks.ico" />
   </head>
-
   <body>
     <ul class="filters">
       <li>
@@ -24,7 +23,7 @@
         </select>
       </li>
       <li>
-        <label>Name</label>
+        <label>First Name</label>
         <input class="picker" for="name" type="text" />
       </li>
       <li>
@@ -32,7 +31,7 @@
         <input class="picker" for="lastname" type="text" />
       </li>
       <li>
-        <label>S.M. Position</label>
+        <label>S. M. Position</label>
         <select class="picker" for="socialMediaPosition">
           <option value="position-left">Left</option>
           <option value="position-right">Right</option>
@@ -58,9 +57,9 @@
         <label>Role</label>
         <select class="picker" for="role">
           <option value="">null</option>
-          <option value="Web Developer">Web Developer</option>
-          <option value="Floor Planner">Floor Planner</option>
-          <option value="Technical Writter">Technical Writter</option>
+          <option value="Full-Stack Developer">Full-Stack Developer</option>
+          <option value="Data Analyst">Data Analyst</option>
+          <option value="Front-End Developer">Front-End Developer</option>
         </select>
       </li>
       <li>
@@ -68,7 +67,7 @@
         <select class="picker" for="city">
           <option value="">null</option>
           <option value="Miami">Miami</option>
-          <option value="Munich">Munich</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
           <option value="Caracas">Caracas</option>
           <option value="Toronto">Toronto</option>
         </select>
@@ -78,14 +77,13 @@
         <select class="picker" for="country">
           <option value="">null</option>
           <option value="USA">USA</option>
-          <option value="Germany">Germany</option>
+          <option value="Brazil">Brazil</option>
           <option value="Canada">Canada</option>
           <option value="Venezuela">Venezuela</option>
         </select>
       </li>
     </ul>
     <div id="widget_content"></div>
-
     <!-- do not remove this bundle.js tag -->
     <script type="text/javascript" src="/main.bundle.js"></script>
   </body>
