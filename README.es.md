@@ -96,7 +96,7 @@ document.querySelectorAll(".picker").forEach(function(elm) {
   });
 ```
 
-Entonces cuando el contenido de los elementos "cambia" se va a actualizar de una vez la variable para cada elemento. Todo lo que necesitas hacer actualizar el contenido HTML dentro de la función `render`, como se mencionó en la instrucción 1.
+Entonces cuando el contenido de los elementos "cambia" se va a actualizar de una vez la variable para cada elemento. Todo lo que necesitas hacer es actualizar el contenido HTML dentro de la función `render`, como se mencionó en la instrucción 1.
 
 ## Valores de variables iniciales
 
