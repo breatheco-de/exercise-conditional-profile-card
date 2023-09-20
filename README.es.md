@@ -2,7 +2,7 @@
 # Tarjeta de Perfil Condicional
 <!--endhide-->
 
-Nota: Asegúrate de que tienes node.js instalado en tu computadora escribiendo en tu terminal:
+**Nota:** Si trabajas localmente, asegúrate de que tienes node.js instalado en tu computadora escribiendo en tu terminal:
 
 ```bash
 $ node -v
@@ -12,23 +12,23 @@ $ node -v
 
 Este proyecto viene con los archivos necesarios para comenzar a trabajar de inmediato.
 
-Recomendamos abrir este mismo repositorio usando una herramienta de aprovisionamiento como [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recomendado) o [Gitpod](https://4geeks.com/es/lesson/como-utilizar-gitpod). Alternativamente, puedes clonarlo en tu computadora local usando el comando `git clone`.
+Recomendamos abrir este mismo repositorio usando un entorno de desarrollo como [Codespaces](https://4geeks.com/es/lesson/tutorial-de-github-codespaces) (recomendado) o [Gitpod](https://4geeks.com/es/lesson/como-utilizar-gitpod). Alternativamente, puedes clonarlo en tu computadora local usando el comando `git clone`.
 
 Este es el repositorio que necesitas abrir:
 
-```
+```text
 https://github.com/breatheco-de/exercise-conditional-profile-card.git
 ```
 
-**👉 Por favor sigue estos pasos en** [cómo comenzar un proyecto de codificación](https://4geeks.com/lesson/how-to-start-a-project).
+**👉 Por favor sigue estos pasos sobre** [cómo comenzar un proyecto de programación](https://4geeks.com/es/lesson/como-comenzar-un-proyecto-de-codificacion).
 
-💡 Importante: Recuerda guardar y cargar tu código en GitHub creando un nuevo repositorio, actualizando el remoto (`git remote set-url origin <your new url>`) y cargando el código en su nuevo repositorio usando los comandos `add`, `commit` y `push` desde el terminal git.
+> 💡 Importante: Recuerda guardar y cargar tu código en GitHub creando un nuevo repositorio, actualizando el remoto (`git remote set-url origin <your new url>`) y cargando el código en su nuevo repositorio usando los comandos `add`, `commit` y `push` desde el terminal git.
 
 ## Un poco de Contexto
 
-Como desarrollador web, estarás creando muchos HTML dinámicos + CSS usando algoritmos de Javascript.
+Como desarrollador web, estarás creando muchos HTML dinámicos y CSS usando algoritmos de JavaScript.
 
-En este ejercicio, debes crear el código HTML necesario para representar una tarjeta de perfil. El código final cambiará en el tiempo de ejecución. En función de una serie de variables que podrían cambiar.
+En este ejercicio, debes crear el código HTML necesario para renderizar una tarjeta de perfil en función de una serie de variables que pueden cambiar. Aquí hay un ejemplo:
 
 ![Tarjeta de perfil condicional](https://github.com/breatheco-de/exercise-conditional-profile-card/raw/master/preview.gif?raw=true)
 
@@ -46,8 +46,8 @@ Puedes ver las `variables` que están siendo generadas escribiendo en la consola
 console.log(window.variables);
 /*
 {
-    includeCover: true, // if includeCover is true the algorithm should
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da", // this is the url of the image that will used as background for the profile cover
+    includeCover: true, // if includeCover is true the algorithm should show the cover image
+    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da", // this is the image's url that will be used as a background for the profile cover
     avatarURL: "https://randomuser.me/api/portraits/women/42.jpg", // this is the url for the profile avatar
     socialMediaPosition: "left", // social media bar position (left or right)
     
@@ -57,7 +57,7 @@ console.log(window.variables);
     instagram: null,
 
     name: null,
-    lastname: null,
+    lastName: null,
     role: null,
     country: null,
     city: null
@@ -65,7 +65,7 @@ console.log(window.variables);
 */
 ```
 
-## 📝Instrucciones:
+## 📝 Instrucciones
 
 Revisa este video con las instrucciones para que entiendas mejor el ejercicio: https://youtu.be/gaVm8eyCqlM
 
@@ -75,7 +75,7 @@ Revisa este video con las instrucciones para que entiendas mejor el ejercicio: h
 
 ## 💡 Atención!
 
-**No** necesitas añadir ningún evento listeners a los elementos que ya están construidos en el proyecto. Esto ya está siendo realizado por esta parte del código:
+**No** necesitas añadir ningún *event listener* a los elementos que ya están construidos en el proyecto. Esto ya está siendo realizado por esta parte del código:
 
 ```javascript
 document.querySelectorAll(".picker").forEach(function(elm) {
@@ -91,30 +91,30 @@ document.querySelectorAll(".picker").forEach(function(elm) {
           : this.value == "false"
           ? false
           : this.value;
-      render(Object.assign(window.variables, values)); // render again the card with new valus
+      render(Object.assign(window.variables, values)); // render again the card with new values
     });
   });
 ```
 
-Entonces cuando el contenido de los elementos "cambia" se va a actualizar de una vez la variable para cada elemento. Todo lo que necesitas hacer actualizar el contenido HTML dentro de la función `render`, como se mencionó en la instrucción 1.
+Entonces cuando el contenido de los elementos "cambia" se va a actualizar de una vez la variable para cada elemento. Todo lo que necesitas hacer es actualizar el contenido HTML dentro de la función `render`, como se mencionó en la instrucción 1.
 
 ## Valores de variables iniciales
 
 | Nombre | Tipo | Valor por Defecto | Descripción |
 | --- | --- | --- | --- |
 | background | string | null | La url de la imagen que se utilizará como fondo para la portada del perfil |
-| includeCover | boolean | true | Determina si debe mostrarse la portada o no. |
+| includeCover | boolean | true | Determina si debe mostrarse la portada o no |
 | avatarURL | string | null | La url para el avatar del perfil |
 | socialMediaPosition | string | "right" | puede ser `left` o` right` y determina dónde colocar la barra de redes sociales |
-| twitter | string | null | El nombre de usuario de Twitter que se mostrará en el perfil. |
-| github | string | null | El nombre de usuario de Github que se mostrará en el perfil. |
-| linkedin | string | null | El nombre de usuario de Linkedin que se mostrará en el perfil. |
-| instagram | string | null | El nombre de usuario de Instagram para ser mostrado en el perfil. |
-| name | string | null | El nombre del usuario que se mostrará en el perfil.|
-| lastname | string | null | El nombre del usuario que se mostrará en el perfil. |
-| role | string | null | El nombre del título del trabajo que se mostrará en el perfil. |
-| country | string | null | El país de residencia del usuario que se mostrará en el perfil. |
-| city | string | null | La ciudad de residencia del usuario que se mostrará en el perfil.|
+| twitter | string | null | El nombre de usuario de Twitter que se mostrará en el perfil |
+| github | string | null | El nombre de usuario de Github que se mostrará en el perfil |
+| linkedin | string | null | El nombre de usuario de Linkedin que se mostrará en el perfil |
+| instagram | string | null | El nombre de usuario de Instagram para ser mostrado en el perfil |
+| name | string | null | El nombre del usuario que se mostrará en el perfil |
+| lastName | string | null | El nombre del usuario que se mostrará en el perfil |
+| role | string | null | El nombre del título del trabajo que se mostrará en el perfil |
+| country | string | null | El país de residencia del usuario que se mostrará en el perfil |
+| city | string | null | La ciudad de residencia del usuario que se mostrará en el perfil |
 
 ## HTML programado manualmente
 
@@ -136,4 +136,4 @@ Este es un ejemplo de una posible salida HTML, vas a tener que remplazar el nomb
 </div>
 ```
 
-Este y otros proyectos son usados para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) realizado por [Alejandro Sánchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Conoce más sobre nuestros [Curso de Programación](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) para convertirte en [Full Stack Developer](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack/?lang=es), o nuestro [Data Science Bootcamp](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning).
+Este y otros proyectos son usados para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) realizado por [Alejandro Sánchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Conoce más sobre nuestros [Cursos de Programación](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) para convertirte en [Full Stack Developer](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack/?lang=es), o nuestro [Data Science Bootcamp](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning).
