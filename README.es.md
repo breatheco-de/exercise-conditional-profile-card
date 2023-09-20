@@ -4,7 +4,7 @@ Como desarrollador web, estarás creando muchos HTML dinámicos + CSS usando alg
 
 En este ejercicio, debes crear el código HTML necesario para representar una tarjeta de perfil. El código final cambiará en tiempo de ejecución en función de una serie de variables que podrían cambiar. Aquí hay un ejemplo de la tarjeta de perfil:
 
-![Conditional Profile Card](https://projects.breatheco.de/p/javascript/beginner/conditional-profile-card/preview.gif)
+![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/blob/master/preview.gif?raw=true)
 
 ## Valores de variables iniciales
 
