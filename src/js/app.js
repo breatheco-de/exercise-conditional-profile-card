@@ -16,7 +16,7 @@ import "../style/index.css";
         instagram: null,
 
         name: null,
-        lastname: null,
+        lastName: null,
         role: null,
         country: null,
         city: null
