@@ -8,7 +8,7 @@ import "../style/index.scss";
         includeCover: true, // if includeCover is true the algorithm should show the cover image
         background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da", // this is the image's url that will be used as a background for the profile cover
         avatarURL: "https://randomuser.me/api/portraits/women/42.jpg", // this is the url for the profile avatar
-        socialMediaPosition: "right", // social media bar position (left or right)
+        socialMediaPosition: "left", // social media bar position (left or right)
         
         twitter: null, // social media usernames
         github: null,
@@ -58,7 +58,7 @@ window.onload = function() {
     // this is the url for the profile avatar
     avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
     // social media bar position (left or right)
-    socialMediaPosition: "position-left",
+    socialMediaPosition: "left",
     // social media usernames
     twitter: null,
     github: "alesanchezr",
