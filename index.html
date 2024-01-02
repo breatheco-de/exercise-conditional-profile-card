@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Profile Card Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #profileCard {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+            transition: background-color 0.3s ease;
+        }
+
+        #generateButton {
+            padding: 10px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        #genderSelector {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conditional Profile Card Generator</h1>
+
+    <button id="generateButton" onclick="generateProfileCard()">Generate Profile Card</button>
+
+    <div id="genderSelector">
+        <label for="gender">Select Gender: </label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+
+    <div id="profileCard"></div>
+
+    <script>
+        function generateProfileCard() {
+            const name = prompt('Enter your name:');
+            const age = prompt('Enter your age:');
+
+            const genderSelect = document.getElementById('gender');
+            const selectedGender = genderSelect.value;
+
+            const profileCard = document.getElementById('profileCard');
+
+            profileCard.innerHTML = `
+                <h2>${name}</h2>
+                <p>Age: ${age}</p>
+                <p>Gender: ${selectedGender}</p>
+            `;
+
+            // Change background color based on gender
+            if (selectedGender === 'male') {
+                profileCard.style.backgroundColor = '#3498db'; // Blue for male
+            } else if (selectedGender === 'female') {
+                profileCard.style.backgroundColor = '#e74c3c'; // Red for female
+            }
+        }
+    </script>
+</body>
+</html>
