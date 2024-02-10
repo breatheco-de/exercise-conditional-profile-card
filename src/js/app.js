@@ -28,19 +28,47 @@ function render(variables = {}) {
   // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
+  let start = false;
+  for (let key in variables) {
+    let socialNet =
+      key === "twiter" ||
+      key === "github" ||
+      key === "linkedin" ||
+      key === "instagram";
+    if (!start && key === "twitter") start = true;
+    if (start && socialNet) {
+      variables[key] == null ? (variables[key] = "4geeksacademy") : null;
+    }
+    if (start && !socialNet) {
+      variables[key] == null ? (variables[key] = key) : null;
+    }
+  }
+
+  // When the user return to the page
+  window.addEventListener("pageshow", function() {
+    let inputs = document.getElementsByClassName("picker");
+    for (var i = 0; i < inputs.length; i++) {
+      let input = inputs[i];
+      let attributeName = "for"; // Attribute to verify
+      let attributeValue = "socialMediaPosition";
+      if (input.getAttribute(attributeName) !== attributeValue) {
+        inputs[i].value = "";
+      } else inputs[i].value = "position-left";
+    }
+  });
 
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+          <h1>${variables.name} ${variables.lastName}</h1>
+          <h2>${variables.role} </h2>
+          <h3>${variables.city}, ${variables.country} </h3>
+          <ul class="${variables.socialMediaPosition}">
+            <li><a href="https://twitter.com/${variables.twitter}"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${variables.github}"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/school/${variables.linkedin}"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${variables.instagram}"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
