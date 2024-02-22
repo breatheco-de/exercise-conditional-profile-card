@@ -22,6 +22,11 @@ https://github.com/breatheco-de/exercise-conditional-profile-card.git
 
 **👉 Por favor sigue estos pasos sobre** [cómo comenzar un proyecto de programación](https://4geeks.com/es/lesson/como-comenzar-un-proyecto-de-codificacion).
 
+Para ver el resultado en el navegador, deberás iniciar el proyecto ejecutando el siguiente comando en tu terminal:
+```bash
+$ npm run start
+```
+
 > 💡 Importante: Recuerda guardar y cargar tu código en GitHub creando un nuevo repositorio, actualizando el remoto (`git remote set-url origin <your new url>`) y cargando el código en su nuevo repositorio usando los comandos `add`, `commit` y `push` desde el terminal git.
 
 ## Un poco de Contexto
