@@ -64,8 +64,8 @@ window.onload = function() {
     github: "",
     linkedin: "",
     instagram: "",
-    name: "",
-    lastname: "",
+    firstname: "",
+
     role: "",
     country: "",
     city: ""
