@@ -29,18 +29,30 @@ function render(variables = {}) {
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
 
+  let twitter = "";
+  if (variables.twitter != null) twitter += variables.twitter + " ";
+  let github = "";
+  if (variables.github != null) github += variables.instagram + " ";
+  let linkedin = "";
+  if (variables.linkedin != null) linkedin += variables.linkedin + " ";
+  let instagram = "";
+  if (variables.instagram != null) instagram += variables.instagram + " ";
+  let fullName = "";
+  if (variables.name) fullName += variables.name;
+  if (variables.lastName) fullName += " " + variables.lastName;
+
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+          <h1>${variables.name}, ${variables.lastName}</h1>
+          <h2>${variables.role}</h2>
+          <h3>${variables.city}, ${variables.country}</h3>
+          <ul class="${variables.socialMediaPosition}">
+            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a>${variables.twitter}</li>
+            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github "></i></a>${variables.github}</li>
+            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a>${variables.linkedin}</li>
+            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a>${variables.instagram}</li>
           </ul>
         </div>
     `;
@@ -56,7 +68,7 @@ window.onload = function() {
     // this is the image's url that will be used as a background for the profile cover
     background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL: "https://avatars.githubusercontent.com/u/112995166?v=4",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
