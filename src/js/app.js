@@ -33,38 +33,44 @@ function render(variables = {}) {
   let twitter = "";
   if (!variables.twitter) twitter += "https://twitter.com/4geeksacademy";
   else twitter += variables.twitter;
+
   /*-----Github------*/
   let github = "";
-  if (!variables.github) github += "https://github.com/Andres-Arreaza";
+  if (!variables.github) github += "https://github.com/4geeksacademy";
   else github += variables.github;
+
   /*-----Github------*/
   let linkedin = "";
   if (!variables.linkedin)
-    linkedin += "https://www.linkedin.com/in/andres-arreaza-1a6235252/";
+    linkedin += "https://linkedin.com/school/4geeksacademy";
   else linkedin += variables.linkedin;
+
   /*-----Instagram------*/
   let instagram = "";
-  if (!variables.instagram)
-    instagram += "https://www.instagram.com/andress_arreaza/";
+  if (!variables.instagram) instagram += "https://instagram.com/4geeksacademy";
   else instagram += variables.instagram;
+
   /*-----FullName------*/
   let fullName = "";
   if (!variables.name) fullName += "Your Name";
   else fullName += variables.name + " ";
   if (!variables.lastName) fullName += " Your last Name";
   else fullName += variables.lastName;
+
   /*-----ROL------*/
   let roleFinal = "";
   if (!variables.role) roleFinal += "Web Developer";
   else roleFinal += variables.role;
+
   /*-----City------*/
   let cityFinal = "";
   if (!variables.city) cityFinal += "Miami";
-  else cityFinal += variables.role;
+  else cityFinal += variables.city;
+
   /*-----country------*/
   let countryFinal = "";
-  if (!variables.city) countryFinal += "USA";
-  else countryFinal += variables.role;
+  if (!variables.country) countryFinal += "USA";
+  else countryFinal += variables.country;
 
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
@@ -92,7 +98,7 @@ window.onload = function() {
     includeCover: true,
     // this is the image's url that will be used as a background for the profile cover
     background:
-      "https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-54587.jpg?t=st=1725499909~exp=1725503509~hmac=39cf63310e37e56f69ad962f458afa9ff4223c183479ea9354ecd428043e1116&w=740",
+      "https://images.unsplash.com/photo-1517184118278-02a369aab35d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     // this is the url for the profile avatar
     avatarURL: "https://avatars.githubusercontent.com/u/112995166?v=4",
     // social media bar position (left or right)
