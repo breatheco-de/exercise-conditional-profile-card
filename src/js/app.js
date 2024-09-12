@@ -69,7 +69,7 @@ function render(variables = {}) {
 
   /*-----country------*/
   let countryFinal = "";
-  if (!variables.city) countryFinal += "USA";
+  if (!variables.country) countryFinal += "USA";
   else countryFinal += variables.country;
 
   // reset the website body with the new html output
