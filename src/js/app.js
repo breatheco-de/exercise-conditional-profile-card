@@ -33,7 +33,7 @@ function render(variables = {}) {
   if (variables.lastName == null) variables.lastName = "Boilett";
   if (variables.socialMediaPosition == null)
     variables.socialMediaPosition = "position-right";
-  if (variables.twitter == null) {
+          <h1>${variables.name} ${variables.lastName}</h1>
     variables.twitter = "https://twitter.com/4geeksacademy";
   } else if (variables.twitter.slice(0, 8) != "https://") {
     variables.twitter = "https://" + variables.twitter;
