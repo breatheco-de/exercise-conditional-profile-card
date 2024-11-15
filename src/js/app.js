@@ -65,7 +65,7 @@ function render(variables = {}) {
     "Last Name"}</h1>
           <h2>${variables.role || "Job Title"}</h2>
       <h3>${variables.city || "City"}, ${variables.country || "Country"}</h3>
-      <ul class="${socialPositionClass}">
+      <ul class="${variables.socialMediaPosition}">
         ${socialLinks}
       </ul>
         </div>
