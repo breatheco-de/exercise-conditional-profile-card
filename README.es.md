@@ -8,6 +8,8 @@
 $ node -v
 ```
 
+<onlyfor saas="false" withBanner="false">
+
 ## 🌱 Cómo comenzar este proyecto
 
 Este proyecto viene con los archivos necesarios para comenzar a trabajar de inmediato.
@@ -28,6 +30,8 @@ $ npm run start
 ```
 
 > 💡 Importante: Recuerda guardar y cargar tu código en GitHub creando un nuevo repositorio, actualizando el remoto (`git remote set-url origin <your new url>`) y cargando el código en su nuevo repositorio usando los comandos `add`, `commit` y `push` desde el terminal git.
+
+</onlyfor>
 
 ## Un poco de Contexto
 
