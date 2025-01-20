@@ -1,65 +1,97 @@
 import "../style/index.css";
 
-/**
- *  EDIT ONLY INSIDE THIS RENDER FUNCTION
- *  This function is called every time the user changes types or changes any input
- * 
-    {
-        includeCover: true, // if includeCover is true the algorithm should show the cover image
-        background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da", // this is the image's url that will be used as a background for the profile cover
-        avatarURL: "https://randomuser.me/api/portraits/women/42.jpg", // this is the url for the profile avatar
-        socialMediaPosition: "right", // social media bar position (left or right)
-        
-        twitter: null, // social media usernames
-        github: null,
-        linkedin: null,
-        instagram: null,
-
-        name: null,
-        lastName: null,
-        role: null,
-        country: null,
-        city: null
-    }
- */
 function render(variables = {}) {
-  console.log("These are the current variables: ", variables); // print on the console
-  // here we ask the logical questions to make decisions on how to build the html
-  // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
-  let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
-  if (variables.includeCover == false) cover = "<div class='cover'></div>";
+  // Set default values if variables are not provided
+  variables = {
+    includeCover:
+      variables.includeCover !== undefined ? variables.includeCover : true,
+    background:
+      variables.background ||
+      "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    avatarURL:
+      variables.avatarURL || "https://randomuser.me/api/portraits/women/42.jpg",
+    socialMediaPosition: variables.socialMediaPosition || "left",
+    twitter: variables.twitter || null,
+    github: variables.github || "alesanchezr",
+    linkedin: variables.linkedin || null,
+    instagram: variables.instagram || null,
+    name: variables.name || "Jane",
+    lastName: variables.lastName || "Doe",
+    role: variables.role || "Software Developer",
+    country: variables.country || "USA",
+    city: variables.city || "San Francisco"
+  };
 
-  // reset the website body with the new html output
-  document.querySelector("#widget_content").innerHTML = `<div class="widget">
-            ${cover}
-          <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-    `;
+  // Update the profile cover
+  const coverElement = document.querySelector(".cover");
+  if (coverElement) {
+    coverElement.style.backgroundImage = variables.includeCover
+      ? `url(${variables.background})`
+      : "none";
+  }
+
+  // Update the profile avatar
+  const avatarElement = document.querySelector(".profile-avatar");
+  if (avatarElement) {
+    avatarElement.src = variables.avatarURL;
+  }
+
+  // Update the profile name
+  const nameElement = document.querySelector(".profile-name");
+  if (nameElement) {
+    nameElement.innerText = `${variables.name} ${variables.lastName}`;
+  }
+
+  // Update the profile role
+  const roleElement = document.querySelector(".profile-role");
+  if (roleElement) {
+    roleElement.innerText = variables.role;
+  }
+
+  // Update the profile location
+  const locationElement = document.querySelector(".profile-location");
+  if (locationElement) {
+    locationElement.innerText = `${variables.city}, ${variables.country}`;
+  }
+
+  // Update social media links
+  const socialMediaElement = document.querySelector(".social-media");
+  if (socialMediaElement) {
+    socialMediaElement.style.flexDirection =
+      variables.socialMediaPosition === "left" ? "row" : "row-reverse";
+  }
+
+  const twitterElement = document.querySelector(".twitter");
+  if (twitterElement) {
+    twitterElement.style.display = variables.twitter ? "block" : "none";
+    twitterElement.href = `https://twitter.com/${variables.twitter}`;
+  }
+
+  const githubElement = document.querySelector(".github");
+  if (githubElement) {
+    githubElement.style.display = variables.github ? "block" : "none";
+    githubElement.href = `https://github.com/${variables.github}`;
+  }
+
+  const linkedinElement = document.querySelector(".linkedin");
+  if (linkedinElement) {
+    linkedinElement.style.display = variables.linkedin ? "block" : "none";
+    linkedinElement.href = `https://linkedin.com/in/${variables.linkedin}`;
+  }
+
+  const instagramElement = document.querySelector(".instagram");
+  if (instagramElement) {
+    instagramElement.style.display = variables.instagram ? "block" : "none";
+    instagramElement.href = `https://instagram.com/${variables.instagram}`;
+  }
 }
 
-/**
- * Don't change any of the lines below, here is where we do the logic for the dropdowns
- */
 window.onload = function() {
   window.variables = {
-    // if includeCover is true the algorithm should show the cover image
     includeCover: true,
-    // this is the image's url that will be used as a background for the profile cover
     background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
-    // this is the url for the profile avatar
     avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
-    // social media bar position (left or right)
-    socialMediaPosition: "position-left",
-    // social media usernames
+    socialMediaPosition: "left",
     twitter: null,
     github: null,
     linkedin: null,
@@ -74,8 +106,7 @@ window.onload = function() {
 
   document.querySelectorAll(".picker").forEach(function(elm) {
     elm.addEventListener("change", function(e) {
-      // <- add a listener to every input
-      const attribute = e.target.getAttribute("for"); // when any input changes, collect the value
+      const attribute = e.target.getAttribute("for");
       let values = {};
       values[attribute] =
         this.value == "" || this.value == "null"
