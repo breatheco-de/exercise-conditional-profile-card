@@ -1,5 +1,8 @@
 {
-	"title" : "Conditional Profile Card Generator",
+	"title" : {
+    "us": "Conditional Profile Card Generator",
+    "es": "Generador de un perfil condicional"
+},
 	"slug" : "conditional-profile-card",
 	"status": "published",
     "difficulty": "beginner",
@@ -9,7 +12,10 @@
     "syntax": "javascript",
 	"solution" : "https://github.com/breatheco-de/exercise-conditional-profile-card/tree/solution",
 	"duration" : 4,
-	"description" : "Practice conditions, render a profile card based on a series of variables that could change in value during runtime like: username, avatar, etc.",
+	"description" : {
+    "us": "Practice Dynamic Conditions with JavaScript: Build a profile card that updates dynamically based on runtime variables like username, avatar, background, and more. Strengthen your coding skills by mastering condition-based rendering in this hands-on project. Perfect for improving dynamic HTML generation.",
+    "es": "Practica condiciones dinámicas con JavaScript: Crea una tarjeta de perfil que se actualice dinámicamente según variables en tiempo de ejecución como nombre de usuario, avatar, fondo y más. Fortalece tus habilidades de programación dominando el renderizado basado en condiciones en este proyecto práctico. Ideal para mejorar la generación de HTML dinámico."
+},
 	"talents": [
 		{ "badge": "identator", "points": 6 },
 		{ "badge": "tag-master", "points": 3 },
@@ -18,5 +24,8 @@
 		{ "badge": "functional-developer", "points": 5 }
 	],
     "autoPlay": false,
-    "projectType": "project"
+    "projectType": "project",
+    "telemetry": {
+    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id=181"
+}
 }
