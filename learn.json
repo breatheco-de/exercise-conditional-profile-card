@@ -1,5 +1,6 @@
 {
-	"title" : {
+    "gitpod": true,
+    "title" : {
     "us": "Conditional Profile Card Generator",
     "es": "Generador de un perfil condicional"
 },
