@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,8 +32,8 @@
       <li>
         <label>S.M. Position</label>
         <select class="picker" for="socialMediaPosition">
-          <option value="position-left">Left</option>
-          <option value="position-right">Right</option>
+          <option value="left">Left</option>
+          <option value="right">Right</option>
         </select>
       </li>
       <li>
@@ -41,7 +41,7 @@
         <input class="picker" for="twitter" type="text" />
       </li>
       <li>
-        <label>Github</label>
+        <label>GitHub</label>
         <input class="picker" for="github" type="text" />
       </li>
       <li>
@@ -58,7 +58,7 @@
           <option value="">null</option>
           <option value="Web Developer">Web Developer</option>
           <option value="Floor Planner">Floor Planner</option>
-          <option value="Technical Writter">Technical Writter</option>
+          <option value="Technical Writer">Technical Writer</option>
         </select>
       </li>
       <li>
@@ -82,7 +82,21 @@
         </select>
       </li>
     </ul>
-    <div id="widget_content"></div>
+    <div id="widget_content">
+      <div class="widget">
+        <div class="cover"></div>
+        <img class="profile-avatar" src="" alt="Profile Avatar" />
+        <h1 class="profile-name"></h1>
+        <h2 class="profile-role"></h2>
+        <h3 class="profile-location"></h3>
+        <div class="social-media">
+          <a class="twitter" href="#" target="_blank">Twitter</a>
+          <a class="github" href="#" target="_blank">GitHub</a>
+          <a class="linkedin" href="#" target="_blank">LinkedIn</a>
+          <a class="instagram" href="#" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
 
     <!-- do not remove this bundle.js tag -->
     <script type="text/javascript" src="/main.bundle.js"></script>
