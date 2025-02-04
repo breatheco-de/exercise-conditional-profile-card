@@ -13,6 +13,7 @@
     "syntax": "javascript",
 	"solution" : "https://github.com/breatheco-de/exercise-conditional-profile-card/tree/solution",
 	"duration" : 4,
+	"template_url": "self",
 	"description" : {
     "us": "Practice Dynamic Conditions with JavaScript: Build a profile card that updates dynamically based on runtime variables like username, avatar, background, and more. Strengthen your coding skills by mastering condition-based rendering in this hands-on project. Perfect for improving dynamic HTML generation.",
     "es": "Practica condiciones dinámicas con JavaScript: Crea una tarjeta de perfil que se actualice dinámicamente según variables en tiempo de ejecución como nombre de usuario, avatar, fondo y más. Fortalece tus habilidades de programación dominando el renderizado basado en condiciones en este proyecto práctico. Ideal para mejorar la generación de HTML dinámico."
