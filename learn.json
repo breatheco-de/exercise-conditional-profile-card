@@ -8,7 +8,7 @@
 	"status": "published",
     "difficulty": "beginner",
     "translations": ["es", "us"],
-    "technologies": ["conditionals", "conditional-rendering"],
+    "technologies": ["conditionals", "conditional-rendering", "javascript", "condicionales"],
     "preview": "https://github.com/breatheco-de/conditional-profile-card/blob/master/preview.gif?raw=true",
     "syntax": "javascript",
 	"solution" : "https://github.com/breatheco-de/exercise-conditional-profile-card/tree/solution",
