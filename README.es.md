@@ -127,7 +127,7 @@ Entonces cuando el contenido de los elementos "cambia" se va a actualizar de una
 
 ## HTML programado manualmente
 
-Este es un ejemplo de una posible salida HTML, vas a tener que remplazar el nombre, apellido, etc. Con los valores que puedan tener estas variables.
+Este es un ejemplo de una posible salida HTML, vas a tener que reemplazar el nombre, apellido, etc. Con los valores que puedan tener estas variables.
 
 ```html
 <div class="widget">
@@ -146,3 +146,4 @@ Este es un ejemplo de una posible salida HTML, vas a tener que remplazar el nomb
 ```
 
 Este y otros proyectos son usados para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) realizado por [Alejandro Sánchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Conoce más sobre nuestros [Cursos de Programación](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) para convertirte en [Full Stack Developer](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack/?lang=es), o nuestro [Data Science Bootcamp](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning).
+Commit: Corregido error ortográfico ("Remplazar" → "Reemplazar")
