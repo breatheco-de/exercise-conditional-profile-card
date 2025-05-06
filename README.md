@@ -115,14 +115,14 @@ So when the elements contents "change" they will already update the variable val
 | background | string | null | the image's url that will be used as a background for the profile cover |
 | avatarURL | string | null | the url for the profile avatar |
 | socialMediaPosition | string | "right" | it can be `left` or `right` and it determines where to place the social media bar |
-| twitter | string | null | the twitter username to be displayed on the profile |
-| github | string | null | the github username to be displayed on the profile |
-| linkedin | string | null | the linkedin username to be displayed on the profile |
-| instagram | string | null | the instagram username to be displayed on the profile |
+| twitter | string | null | the user twitter page to be displayed on the profile |
+| github | string | null | the user github page to be displayed on the profile |
+| linkedin | string | null | the user linkedin page to be displayed on the profile |
+| instagram | string | null | the user instagram page to be displayed on the profile |
 | name | string | null | The name of the user to be displayed on the profile |
-| lastName | string | null | The name of the user to be displayed on the profile |
-| role | string | null | The name of the user to be displayed on the profile |
-| country | string | null | The name of the user to be displayed on the profile |
+| lastName | string | null | The last name of the user to be displayed on the profile |
+| role | string | null | The role of the user to be displayed on the profile |
+| country | string | null | The country of the user to be displayed on the profile |
 | city | string | null | the city of the user to be displayed on the profile |
 
 ## Hard-Coded HTML
