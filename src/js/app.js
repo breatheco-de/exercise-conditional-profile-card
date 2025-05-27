@@ -42,7 +42,7 @@ function render(variables = {}) {
   city = variables.city == null ? "City" : variables.city;
 
   let country = "Country";
-  role = variables.country == null ? "Country" : variables.country;
+  country = variables.country == null ? "Country" : variables.country;
 
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
@@ -51,11 +51,11 @@ function render(variables = {}) {
           <h1> ${name} ${lastName} </h1>
           <h2> ${role} </h2>
           <h3>${city}, ${country}</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+          <ul class=" ${variables.socialMediaPosition} ">
+            
+            <li><a href="https://github.com/alejandroespla"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/alejandro-espl%C3%A1/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/espla_design/"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
