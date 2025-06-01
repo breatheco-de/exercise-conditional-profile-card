@@ -26,21 +26,65 @@ function render(variables = {}) {
   console.log("These are the current variables: ", variables); // print on the console
   // here we ask the logical questions to make decisions on how to build the html
   // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
-  let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
-  if (variables.includeCover == false) cover = "<div class='cover'></div>";
+
+  //// BORRADO PARA CONVERTIR A UN CONDITIONAL RENDERING
+  // let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
+  // if (variables.includeCover == false) cover = "<div class='cover'></div>";
+
+  //// COVER (includeCover) CONVERTIDO A CONDITIONAL RENDERING
+  let cover = `<div class="cover">${
+    variables.includeCover === true
+      ? `<img src="${variables.background}" />`
+      : ""
+  }</div>`;
 
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+          
+          <h1>${variables.name === null ? "[Name]" : `${variables.name}`} ${
+    variables.lastName == null ? "[lastName]" : `${variables.lastName}`
+  }</h1>
+
+          <h2>${
+            variables.role === null ? "[Choose role]" : `${variables.role}`
+          }</h2>
+
+          <h3>${
+            variables.city === null ? "[Pick city]" : `${variables.city}`
+          }, ${
+    variables.country === null ? "[Select country]" : `${variables.country}`
+  }</h3>
+
+          <ul class=${
+            variables.socialMediaPosition === "position-left"
+              ? `"position-left"`
+              : `${variables.socialMediaPosition}`
+          }>
+            <li><a href="${
+              variables.twitter === null
+                ? "https://twitter.com/4geeksacademy"
+                : `https://twitter.com/${variables.twitter}`
+            }"><i class="fab fa-twitter"></i></a></li>
+
+            <li><a href="${
+              variables.github === null
+                ? "https://github.com/4geeksacademy"
+                : `https://github.com/${variables.github}`
+            }"><i class="fab fa-github"></i></a></li>
+
+            <li><a href="${
+              variables.linkedin === null
+                ? "https://linkedin.com/school/4geeksacademy"
+                : `https://linkedin.com/${variables.linkedin}`
+            }"><i class="fab fa-linkedin"></i></a></li>
+
+            <li><a href="${
+              variables.instagram === null
+                ? "https://instagram.com/4geeksacademy"
+                : `https://instagram.com/${variables.instagram}`
+            }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -70,6 +114,7 @@ window.onload = function() {
     country: null,
     city: null
   };
+
   render(window.variables); // render the card for the first time
 
   document.querySelectorAll(".picker").forEach(function(elm) {
