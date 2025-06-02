@@ -28,13 +28,15 @@ function render(variables = {}) {
   // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
+  const attribute = e.target.getAttribute("data-attribute");
+
 
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${variables.name || "Name"} ${variables.lastName ||
-    "Last Name"} </h1>
+    "last Name"} </h1>
           <h2>${variables.role || "Role"} </h2>
           <h3>${variables.city || "City"}</h3>
           <ul class=${variables.socialMediaPosition}>
@@ -55,10 +57,9 @@ window.onload = function() {
     // if includeCover is true the algorithm should show the cover image
     includeCover: true,
     // this is the image's url that will be used as a background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background: "https://es.pinterest.com/pin/1900024838896039/",
     // this is the url for the profile avatar
-    avatarURL:
-      "https://i.pinimg.com/736x/0b/f0/28/0bf02848dac44669593426878e5b9c34.jpg",
+    avatarURL: "https://es.pinterest.com/pin/581949583131838614/",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
