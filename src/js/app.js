@@ -23,27 +23,59 @@ import "../style/index.css";
     }
  */
 function render(variables = {}) {
-  console.log("These are the current variables: ", variables); // print on the console
-  // here we ask the logical questions to make decisions on how to build the html
-  // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
-  let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
-  if (variables.includeCover == false) cover = "<div class='cover'></div>";
+  console.log("These are the current variables: ", variables);
 
-  // reset the website body with the new html output
+  // Portada: se decide si se muestra la imagen de fondo o no
+  let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
+  if (variables.includeCover === false) cover = "<div class='cover'></div>";
+
+  // Nombre completo: combinamos el nombre y apellido, o usamos valor predeterminado
+  let nombreCompleto = "";
+  if (variables.name || variables.lastName) {
+    nombreCompleto = `${variables.name || "Lucy"} ${variables.lastName ||
+      "Boilett"}`.trim();
+  } else {
+    nombreCompleto = "Lucy Boilett";
+  }
+
+  // Rol (ocupación): si no se provee lo dejamos con un valor por defecto
+  let rol = variables.role || "Web Developer";
+
+  // Ubicación: construyendo la cadena a partir de ciudad y país
+  let ubicacion = "";
+  if (variables.city || variables.country) {
+    // Se agregan los valores ingresados, o se dejan vacíos si no están disponibles
+    ubicacion = `${variables.city || "Miami"}, ${variables.country || "USA"}`;
+  } else {
+    ubicacion = "Miami, USA";
+  }
+
+  // Redes sociales: se renderizan solo si existe un usuario en alguna
+  let redesSociales = `<ul class="${variables.socialMediaPosition ||
+    "position-right"}">`;
+  if (variables.twitter) {
+    redesSociales += `<li><a href="https://twitter.com/${variables.twitter}" target="_blank"><i class="fab fa-twitter"></i></a></li>`;
+  }
+  if (variables.github) {
+    redesSociales += `<li><a href="https://github.com/${variables.github}" target="_blank"><i class="fab fa-github"></i></a></li>`;
+  }
+  if (variables.linkedin) {
+    redesSociales += `<li><a href="https://linkedin.com/in/${variables.linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a></li>`;
+  }
+  if (variables.instagram) {
+    redesSociales += `<li><a href="https://instagram.com/${variables.instagram}" target="_blank"><i class="fab fa-instagram"></i></a></li>`;
+  }
+  redesSociales += `</ul>`;
+
+  // Renderizamos el widget completo, combinando todos los elementos dinámicos
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-    `;
+          <h1>${nombreCompleto}</h1>
+          <h2>${rol}</h2>
+          <h3>${ubicacion}</h3>
+          ${redesSociales}
+        </div>`;
 }
 
 /**
