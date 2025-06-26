@@ -24,8 +24,10 @@ import "../style/index.css";
  */
 function render(variables = {}) {
   console.log("These are the current variables: ", variables);
-
-  // Portada: se decide si se muestra la imagen de fondo o no
+  `gkjdfgfdg
+fsdfldsnfsd
+sflsdjfnsddf
+sdfslnf`; // Portada: se decide si se muestra la imagen de fondo o no
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover === false) cover = "<div class='cover'></div>";
 
@@ -53,18 +55,35 @@ function render(variables = {}) {
   // Redes sociales: se renderizan solo si existe un usuario en alguna
   let redesSociales = `<ul class="${variables.socialMediaPosition ||
     "position-right"}">`;
-  if (variables.twitter) {
-    redesSociales += `<li><a href="https://twitter.com/${variables.twitter}" target="_blank"><i class="fab fa-twitter"></i></a></li>`;
-  }
-  if (variables.github) {
-    redesSociales += `<li><a href="https://github.com/${variables.github}" target="_blank"><i class="fab fa-github"></i></a></li>`;
-  }
-  if (variables.linkedin) {
-    redesSociales += `<li><a href="https://linkedin.com/in/${variables.linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a></li>`;
-  }
-  if (variables.instagram) {
-    redesSociales += `<li><a href="https://instagram.com/${variables.instagram}" target="_blank"><i class="fab fa-instagram"></i></a></li>`;
-  }
+
+  redesSociales += `
+    <li>
+      <a href="https://twitter.com/${variables.twitter ||
+        "4geeksacademy"}" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/${variables.github ||
+        "4geeksacademy"}" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://linkedin.com/${
+        variables.linkedin ? "in/" + variables.linkedin : "school/4geeksacademy"
+      }" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://instagram.com/${variables.instagram ||
+        "4geeksacademy"}" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+  `;
+
   redesSociales += `</ul>`;
 
   // Renderizamos el widget completo, combinando todos los elementos dinámicos
