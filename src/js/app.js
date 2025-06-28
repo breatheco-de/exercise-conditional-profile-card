@@ -24,35 +24,24 @@ import "../style/index.css";
  */
 function render(variables = {}) {
   console.log("These are the current variables: ", variables);
-  `gkjdfgfdg
-fsdfldsnfsd
-sflsdjfnsddf
-sdfslnf`; // Portada: se decide si se muestra la imagen de fondo o no
-  let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
-  if (variables.includeCover === false) cover = "<div class='cover'></div>";
 
-  // Nombre completo: combinamos el nombre y apellido, o usamos valor predeterminado
-  let nombreCompleto = "";
-  if (variables.name || variables.lastName) {
-    nombreCompleto = `${variables.name || "Lucy"} ${variables.lastName ||
-      "Boilett"}`.trim();
-  } else {
-    nombreCompleto = "Lucy Boilett";
-  }
+  let cover =
+    variables.includeCover === false
+      ? "<div class='cover'></div>"
+      : `<div class="cover"><img src="${variables.background}" /></div>`;
 
-  // Rol (ocupación): si no se provee lo dejamos con un valor por defecto
+  let nombreCompleto =
+    variables.name || variables.lastName
+      ? `${variables.name || "Lucy"} ${variables.lastName || "Boilett"}`.trim()
+      : "Lucy Boilett";
+
   let rol = variables.role || "Web Developer";
 
-  // Ubicación: construyendo la cadena a partir de ciudad y país
-  let ubicacion = "";
-  if (variables.city || variables.country) {
-    // Se agregan los valores ingresados, o se dejan vacíos si no están disponibles
-    ubicacion = `${variables.city || "Miami"}, ${variables.country || "USA"}`;
-  } else {
-    ubicacion = "Miami, USA";
-  }
+  let ubicacion =
+    variables.city || variables.country
+      ? `${variables.city || "Miami"}, ${variables.country || "USA"}`
+      : "Miami, USA";
 
-  // Redes sociales: se renderizan solo si existe un usuario en alguna
   let redesSociales = `<ul class="${variables.socialMediaPosition ||
     "position-right"}">`;
 
@@ -86,7 +75,6 @@ sdfslnf`; // Portada: se decide si se muestra la imagen de fondo o no
 
   redesSociales += `</ul>`;
 
-  // Renderizamos el widget completo, combinando todos los elementos dinámicos
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
