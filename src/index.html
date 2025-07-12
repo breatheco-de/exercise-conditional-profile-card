@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,74 +14,109 @@
   <body>
     <ul class="filters">
       <li>
-        <label>Include Cover</label>
-        <select class="picker" for="includeCover">
+        <label for="includeCover">Include Cover</label>
+        <select class="picker" id="includeCover" name="includeCover">
           <option value="">Include Cover</option>
           <option value="true">True</option>
           <option value="false">False</option>
         </select>
       </li>
       <li>
-        <label>Name</label>
-        <input class="picker" for="name" type="text" />
+        <label for="name">Name</label>
+        <input class="picker" id="name" name="name" type="text" />
       </li>
       <li>
-        <label>Last Name</label>
-        <input class="picker" for="lastName" type="text" />
+        <label for="lastName">Last Name</label>
+        <input class="picker" id="lastName" name="lastName" type="text" />
       </li>
       <li>
-        <label>S.M. Position</label>
-        <select class="picker" for="socialMediaPosition">
+        <label for="socialMediaPosition">S.M. Position</label>
+        <select
+          class="picker"
+          id="socialMediaPosition"
+          name="socialMediaPosition"
+        >
           <option value="position-left">Left</option>
           <option value="position-right">Right</option>
         </select>
       </li>
       <li>
-        <label>Twitter</label>
-        <input class="picker" for="twitter" type="text" />
+        <label for="twitter">Twitter</label>
+        <input
+          class="picker"
+          id="twitter"
+          name="twitter"
+          type="text"
+          placeholder="Usuario"
+        />
       </li>
       <li>
-        <label>Github</label>
-        <input class="picker" for="github" type="text" />
+        <label for="github">Github</label>
+        <input
+          class="picker"
+          id="github"
+          name="github"
+          type="text"
+          placeholder="Usuario"
+        />
       </li>
       <li>
-        <label>LinkedIn</label>
-        <input class="picker" for="linkedin" type="text" />
+        <label for="linkedin">LinkedIn</label>
+        <input
+          class="picker"
+          id="linkedin"
+          name="linkedin"
+          type="text"
+          placeholder="Usuario"
+        />
       </li>
       <li>
-        <label>Instagram</label>
-        <input class="picker" for="instagram" type="text" />
+        <label for="instagram">Instagram</label>
+        <input
+          class="picker"
+          id="instagram"
+          name="instagram"
+          type="text"
+          placeholder="Usuario"
+        />
       </li>
       <li>
-        <label>Role</label>
-        <select class="picker" for="role">
+        <label for="role">Role</label>
+        <select class="picker" id="role" name="role">
           <option value="">null</option>
           <option value="Web Developer">Web Developer</option>
           <option value="Floor Planner">Floor Planner</option>
           <option value="Technical Writter">Technical Writter</option>
+          <option value="Cybersecurity Specialist"
+            >Cybersecurity Specialist</option
+          >
         </select>
       </li>
       <li>
-        <label>City</label>
-        <select class="picker" for="city">
+        <label for="city">City</label>
+        <select class="picker" id="city" name="city">
           <option value="">null</option>
           <option value="Miami">Miami</option>
           <option value="Munich">Munich</option>
           <option value="Caracas">Caracas</option>
           <option value="Toronto">Toronto</option>
+          <option value="Zurich">Zurich</option>
+          <option value="Madrid">Madrid</option>
         </select>
       </li>
       <li>
-        <label>Country</label>
-        <select class="picker" for="country">
+        <label for="country">Country</label>
+        <select class="picker" id="country" name="country">
           <option value="">null</option>
           <option value="USA">USA</option>
           <option value="Germany">Germany</option>
           <option value="Canada">Canada</option>
           <option value="Venezuela">Venezuela</option>
+          <option value="Switzerland">Switzerland</option>
         </select>
       </li>
     </ul>
+
     <div id="widget_content"></div>
 
     <!-- do not remove this bundle.js tag -->

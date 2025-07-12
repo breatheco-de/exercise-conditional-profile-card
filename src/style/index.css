@@ -70,7 +70,7 @@
   position: absolute;
   top: 20px;
   padding: 0;
-  background: #2cdfd3;
+  background: #151815;
 }
 .widget ul.position-left {
   left: -26px;
@@ -87,7 +87,7 @@
   color: #fff;
   cursor: pointer;
   text-align: center;
-  border-bottom: 1px solid #2cd5ca;
+  border-bottom: 1px solid #303232;
   transition: background-color 0.3s;
 }
 .widget ul li:hover > a {
