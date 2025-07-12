@@ -37,7 +37,9 @@ function render(variables = {}) {
       <h2>${variables.role || "Role"}</h2>
       <h3>${variables.city || "City"}, ${variables.country || "Country"}</h3>
       <ul class="${variables.socialMediaPosition}">
-        <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://twitter.com/${
+          variables.twitter
+        }"><i class="fab fa-twitter"></i></a></li>
         <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
         <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
         <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
@@ -51,8 +53,10 @@ function render(variables = {}) {
 window.onload = function() {
   window.variables = {
     includeCover: true,
-    background: "https://images.unsplash.com/photo-1503264116251-35a269479413",
-    avatarURL: "https://i.imgur.com/D1FvO2V.jpg",
+    background:
+      "https://i.pinimg.com/1200x/22/31/82/2231828c4c057433436d232b1b9d8667.jpg",
+    avatarURL:
+      "https://i.pinimg.com/1200x/55/47/40/55474050a8695afce7ba0ee30d2eacb3.jpg",
     socialMediaPosition: "position-left",
     twitter: null,
     github: null,
