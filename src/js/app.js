@@ -60,22 +60,17 @@ function render(variables = {}) {
             <li><a href=${
               variables.linkedin == null
                 ? "https://linkedin.com/school/4geeksacademy"
-                : variables.linkedin
+                : "https://linkedin.com/" + variables.linkedin
             } ><i class="fab fa-linkedin"></i></a></li>
             <li><a href=${
               variables.instagram == null
                 ? "https://instagram.com/4geeksacademy"
-                : variables.instagram
+                : "https://instagram.com/" + variables.instagram
             }><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
 }
-/** -------------------MIRAR COMENTARIO  | | JUSTO DEBAJO------------------
- *---------------------------------------\ /---------------------------
- */
-
-/**COMENTARIO PERSONAL MAURO: En las variables linkedin e instagram he tratado de hacer lo mismo que en twiter y github (Es decir, redirigir directamente a la página de perfil sumando la dirección + el nombre de usuario), pero debe haber mas variables que no contemplo ni conozco, asi que redigirán directamente a la dirección asignada en el condicional == null.  */
 /**
  * Don't change any of the lines below, here is where we do the logic for the dropdowns
  */
