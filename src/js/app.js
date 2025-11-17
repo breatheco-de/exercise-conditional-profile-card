@@ -22,6 +22,7 @@ import "../style/index.css";
         city: null
     }
  */
+
 function render(variables = {}) {
   console.log("These are the current variables: ", variables); // print on the console
   // here we ask the logical questions to make decisions on how to build the html
@@ -33,19 +34,43 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+          <h1>${variables.name == null ? "Lucy" : variables.name} ${
+    variables.lastName == null ? "Boilett" : variables.lastName
+  }</h1>
+          <h2>${variables.role == null ? "Web Developer" : variables.role}</h2>
+          <h3>${variables.city == null ? "Miami" : variables.city}, ${
+    variables.country == null ? "USA" : variables.country
+  }</h3>
+          <ul class=${
+            variables.socialMediaPosition == "right"
+              ? "position-right"
+              : variables.socialMediaPosition
+          }>
+            <li><a href=${
+              variables.twitter == null
+                ? "https://twitter.com/4geeksacademy"
+                : "https://twitter.com/" + variables.twitter
+            } ><i class="fab fa-twitter"></i></a></li>
+            <li><a href=${
+              variables.github == null
+                ? "https://github.com/4geeksacademy"
+                : "https://github.com/" + variables.github
+            }><i class="fab fa-github"></i></a></li>
+          
+            <li><a href=${
+              variables.linkedin == null
+                ? "https://linkedin.com/school/4geeksacademy"
+                : "https://linkedin.com/" + variables.linkedin
+            } ><i class="fab fa-linkedin"></i></a></li>
+            <li><a href=${
+              variables.instagram == null
+                ? "https://instagram.com/4geeksacademy"
+                : "https://instagram.com/" + variables.instagram
+            }><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
 }
-
 /**
  * Don't change any of the lines below, here is where we do the logic for the dropdowns
  */
