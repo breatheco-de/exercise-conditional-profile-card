@@ -120,7 +120,7 @@ Entonces cuando el contenido de los elementos "cambia" se va a actualizar de una
 | linkedin | string | null | El nombre de usuario de Linkedin que se mostrará en el perfil |
 | instagram | string | null | El nombre de usuario de Instagram para ser mostrado en el perfil |
 | name | string | null | El nombre del usuario que se mostrará en el perfil |
-| lastName | string | null | El nombre del usuario que se mostrará en el perfil |
+| lastName | string | null | El apellido del usuario que se mostrará en el perfil |
 | role | string | null | El nombre del título del trabajo que se mostrará en el perfil |
 | country | string | null | El país de residencia del usuario que se mostrará en el perfil |
 | city | string | null | La ciudad de residencia del usuario que se mostrará en el perfil |
