@@ -43,7 +43,7 @@
     "bc-console": "0.0.2",
     "bc-webpack-error-reporting-plugin": "0.0.2",
     "clean-stack": "^3.0.1",
-    "css-loader": "^3.5.1",
+    "css-loader": "^6.8.1",
     "error-overlay-webpack-plugin": "^0.2.0",
     "escape-string-regexp": "^1.0.5",
     "eslint": "^4.19.1",
