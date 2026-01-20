@@ -41,7 +41,7 @@ In this exercise, you have to create the HTML code needed to render a profile ca
 
 ![Conditional Profile Card](https://github.com/breatheco-de/exercise-conditional-profile-card/blob/master/preview.gif?raw=true)
 
-Inside the `src/app.js` file there is a `render` function that receives variables and contains the logic to create most of the website HTML code.
+Inside the `src/js/app.js` file there is a `render` function that receives variables and contains the logic to create most of the website HTML code.
 
 ```js
 function render(variables = {}) {
