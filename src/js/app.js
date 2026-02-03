@@ -33,14 +33,38 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+          <h1>${
+            variables.name
+              ? `${variables.name} ${variables.lastName}`
+              : "José Predomo"
+          }</h1>
+          <h2>${variables.role ? variables.role : "Web Developer"}</h2>
+          <h3>${
+            variables.city
+              ? `${variables.city}, ${variables.country}`
+              : "Miami, USA"
+          }</h3>
+          <ul class="${variables.socialMediaPosition}">
+            <li><a href="${
+              variables.twitter
+                ? `https://twitter.com/${variables.twitter}`
+                : "https://twitter.com/4geeksacademy"
+            }"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="${
+              variables.github
+                ? `https://github.com/${variables.github}`
+                : "https://github.com/4geeksacademy"
+            }"><i class="fab fa-github"></i></a></li>
+            <li><a href="${
+              variables.linkedin
+                ? `https://linkedin.com/in/${variables.linkedin}`
+                : "https://linkedin.com/shool/4geeksacademy"
+            }"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="${
+              variables.instagram
+                ? variables.instagram
+                : "https://instagram.com/4geeksacademy"
+            }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -60,6 +84,7 @@ window.onload = function() {
     // social media bar position (position-left or position-right)
     socialMediaPosition: "position-right",
     // social media usernames
+    //condicionales ternarios
     twitter: null,
     github: null,
     linkedin: null,
